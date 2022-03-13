@@ -1,5 +1,16 @@
 const User = require("./model");
 const { InvalidArgumentError, InternalServerError } = require("../errors");
+const jwt = require("jsonwebtoken");
+
+function createJWTToken(user){
+  const payload = {
+    id: user.id
+  };
+
+  const token = jwt.sign(payload, 'secret-password');
+
+  return token;
+}
 
 module.exports = {
   add: async (req, res) => {
@@ -43,6 +54,9 @@ module.exports = {
   },
 
   login: (req, res) => {
+    const token = createJWTToken(req.user);
+    res.set('Authorization', token);
+    //this is 204 because it's useful for the user to know that the needed information it's on the headers
     res.status(204).send();
   },
 };
