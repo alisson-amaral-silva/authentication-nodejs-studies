@@ -2,5 +2,6 @@ module.exports = {
   userRoutes: require('./routes'),
   userController: require('./controller'),
   userModel: require('./model'),
-  authenticationStrategies: require('./authentication-strategies')
+  authenticationStrategies: require('./authentication-strategies'),
+  authenticationMiddlewares: require('./authentication-middlewares')
 };

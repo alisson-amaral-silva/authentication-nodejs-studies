@@ -1,7 +1,6 @@
 const usersController = require("./controller");
 const authenticateMiddlewares = require("./authentication-middlewares");
-
-const passport = require("passport");
+const {authenticationMiddlewares} =  require('../users');
 
 module.exports = (app) => {
   app.route("/user").post(usersController.add).get(usersController.list);
@@ -16,7 +15,7 @@ module.exports = (app) => {
   app
     .route("/user/:id")
     .delete(
-      passport.authenticate("bearer", { session: false }),
+      authenticationMiddlewares.bearer,
       usersController.delete
     );
 };
