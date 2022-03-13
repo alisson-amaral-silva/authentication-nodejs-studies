@@ -6,15 +6,13 @@ module.exports = (app) => {
 
   app
     .route("/user/login")
-    .post(
-      authenticateMiddlewares.local,
-      usersController.login
-    );
+    .post(authenticateMiddlewares.local, usersController.login);
+
+  app
+    .route("/user/logout")
+    .get(authenticateMiddlewares.bearer, usersController.logout);
 
   app
     .route("/user/:id")
-    .delete(
-      authenticateMiddlewares.bearer,
-      usersController.delete
-    );
+    .delete(authenticateMiddlewares.bearer, usersController.delete);
 };

@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 
 const User = require("./model");
 const { InvalidArgumentError } = require("../errors");
+const handleBlacklist = require("../../redis/handle-blacklist");
 
 function checkUser(user) {
   if (!user) throw new InvalidArgumentError("This user does not exist");
@@ -13,8 +14,15 @@ function checkUser(user) {
 
 async function checkPassword(password, hashPassword) {
   const validPassword = await bcrypt.compare(password, hashPassword);
-  if (!validPassword)
+  if (validPassword)
     throw new InvalidArgumentError("Email or password invalid");
+}
+
+async function checkBlacklistToken(token) { 
+  const blacklistToken = await handleBlacklist.hasToken(token);
+  if(!blacklistToken){
+    throw new jwt.JsonWebTokenError("Invalid token due logout!");
+  }
 }
 
 passport.use(
@@ -40,12 +48,13 @@ passport.use(
 
 passport.use(
   new BearerStrategy(async (token, done) => {
-      try {
-          const payload = jwt.verify(token, process.env.JWT_KEY);
-          const user = User.getById(payload.id);
-          done(null, user);
-      } catch (error) {
-          done(error);          
-      }
+    try {
+      await checkBlacklistToken(token);
+      const payload = jwt.verify(token, process.env.JWT_KEY);
+      const user = User.getById(payload.id);
+      done(null, user, { token: token });
+    } catch (error) {
+      done(error);
+    }
   })
 );

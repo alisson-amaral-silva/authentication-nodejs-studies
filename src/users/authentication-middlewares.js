@@ -40,6 +40,7 @@ module.exports = {
         return res.status(401).json({ error: error.message });
       }
 
+      req.token = info.token;
       req.user = user;
       return next();
     })(req, res, next);
