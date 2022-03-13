@@ -7,7 +7,7 @@ const { InvalidArgumentError} = require('../errors');
 
 function checkUser(user){
     if(!user)
-        throw new InvalidArgumentError('This user does not exists');
+        throw new InvalidArgumentError('This user does not exist');
 }
 
 async function checkPassword(password, hashPassword){
@@ -25,7 +25,7 @@ passport.use(
         try {
             const user = await User.getByEmail(email);
             checkUser(user);
-            checkPassword(password, user.hashPassword);
+            await checkPassword(password, user.hashPassword);
 
             done(null, user);
         } catch (error) {
