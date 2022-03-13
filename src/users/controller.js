@@ -2,13 +2,13 @@ const User = require("./model");
 const { InvalidArgumentError, InternalServerError } = require("../errors");
 const jwt = require("jsonwebtoken");
 
-function createJWTToken(user){
+function createJWTToken(user) {
   const payload = {
-    id: user.id
+    id: user.id,
   };
   // this key was generated based on this node command through the terminal
   // node -e "console.log( require('crypto').randomBytes(256).toString('base64') )"
-  const token = jwt.sign(payload, process.env.JWT_KEY);
+  const token = jwt.sign(payload, process.env.JWT_KEY, { expiresIn: "20m" });
 
   return token;
 }
@@ -56,7 +56,7 @@ module.exports = {
 
   login: (req, res) => {
     const token = createJWTToken(req.user);
-    res.set('Authorization', token);
+    res.set("Authorization", token);
     //this is 204 because it's useful for the user to know that the needed information it's on the headers
     res.status(204).send();
   },
