@@ -1,21 +1,21 @@
 const db = require('../../database');
-const { InternalServerError } = require('../erros');
+const { InternalServerError } = require('../errors');
 
 module.exports = {
-  adiciona: usuario => {
+  add: user => {
     return new Promise((resolve, reject) => {
       db.run(
         `
-          INSERT INTO usuarios (
-            nome,
+          INSERT INTO users (
+            name,
             email,
-            senha
+            password
           ) VALUES (?, ?, ?)
         `,
-        [usuario.nome, usuario.email, usuario.senha],
+        [user.name, user.email, user.password],
         erro => {
           if (erro) {
-            reject(new InternalServerError('Erro ao adicionar o usuário!'));
+            reject(new InternalServerError('Error trying to add user!'));
           }
 
           return resolve();
@@ -24,73 +24,73 @@ module.exports = {
     });
   },
 
-  buscaPorId: id => {
+  getById: id => {
     return new Promise((resolve, reject) => {
       db.get(
         `
           SELECT *
-          FROM usuarios
+          FROM users
           WHERE id = ?
         `,
         [id],
-        (erro, usuario) => {
+        (erro, user) => {
           if (erro) {
-            return reject('Não foi possível encontrar o usuário!');
+            return reject(`Couldn't  find this user!`);
           }
 
-          return resolve(usuario);
+          return resolve(user);
         }
       );
     });
   },
 
-  buscaPorEmail: email => {
+  getByEmail: email => {
     return new Promise((resolve, reject) => {
       db.get(
         `
           SELECT *
-          FROM usuarios
+          FROM users
           WHERE email = ?
         `,
         [email],
-        (erro, usuario) => {
+        (erro, user) => {
           if (erro) {
-            return reject('Não foi possível encontrar o usuário!');
+            return reject(`Couldn't find this user!`);
           }
 
-          return resolve(usuario);
+          return resolve(user);
         }
       );
     });
   },
 
-  lista: () => {
+  list: () => {
     return new Promise((resolve, reject) => {
       db.all(
         `
-          SELECT * FROM usuarios
+          SELECT * FROM users
         `,
-        (erro, usuarios) => {
+        (erro, users) => {
           if (erro) {
-            return reject('Erro ao listar usuários');
+            return reject(`Couldn't list users!`);
           }
-          return resolve(usuarios);
+          return resolve(users);
         }
       );
     });
   },
 
-  deleta: usuario => {
+  delete: user => {
     return new Promise((resolve, reject) => {
       db.run(
         `
-          DELETE FROM usuarios
+          DELETE FROM users
           WHERE id = ?
         `,
-        [usuario.id],
+        [user.id],
         erro => {
           if (erro) {
-            return reject('Erro ao deletar o usuário');
+            return reject(`Couldn't delete this user!`);
           }
           return resolve();
         }

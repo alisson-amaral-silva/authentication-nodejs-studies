@@ -4,28 +4,28 @@ const db = new sqlite3.Database('db.sqlite');
 const POSTS_SCHEMA = `
   CREATE TABLE IF NOT EXISTS posts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    titulo VARCHAR(50) NOT NULL,
-    conteudo VARCHAR(140)
+    title VARCHAR(50) NOT NULL,
+    content VARCHAR(140)
   )
   `;
 
-const USUARIOS_SCHEMA = `
-  CREATE TABLE IF NOT EXISTS usuarios (
+const USERS_SCHEMA = `
+  CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome VARCHAR(40) NOT NULL,
+    name VARCHAR(40) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
-    senha VARCHAR(255) NOT NULL
+    password VARCHAR(255) NOT NULL
   )
   `;
 
 db.serialize(() => {
   db.run('PRAGMA foreign_keys=ON');
   db.run(POSTS_SCHEMA);
-  db.run(USUARIOS_SCHEMA);
+  db.run(USERS_SCHEMA);
 
-  db.each('SELECT * FROM usuarios', (err, usuario) => {
-    console.log('Usuarios: ');
-    console.log(usuario);
+  db.each('SELECT * FROM users', (err, user) => {
+    console.log('Users: ');
+    console.log(user);
   });
 });
 

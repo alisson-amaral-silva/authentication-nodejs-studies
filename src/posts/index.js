@@ -1,5 +1,5 @@
 module.exports = {
-  modelo: require('./posts-modelo'),
-  rotas: require('./posts-rotas'),
-  controlador: require('./posts-controlador')
+  postModel: require('./model'),
+  postRoutes: require('./routes'),
+  postController: require('./controller')
 };
