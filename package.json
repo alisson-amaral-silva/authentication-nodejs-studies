@@ -9,9 +9,16 @@
   },
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "1.19.2",
     "express": "4.17.3",
     "nodemon": "2.0.15",
     "sqlite3": "5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0"
+  },
+  "jshintConfig": {
+    "esversion": 6
   }
 }
