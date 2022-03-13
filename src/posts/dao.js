@@ -22,7 +22,7 @@ module.exports = {
     });
   },
 
-  lista: () => {
+  list: () => {
     return new Promise((resolve, reject) => {
       db.all(`SELECT * FROM posts`, (erro, result) => {
         if (erro) {
