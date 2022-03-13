@@ -6,8 +6,9 @@ function createJWTToken(user){
   const payload = {
     id: user.id
   };
-
-  const token = jwt.sign(payload, 'secret-password');
+  // this key was generated based on this node command through the terminal
+  // node -e "console.log( require('crypto').randomBytes(256).toString('base64') )"
+  const token = jwt.sign(payload, process.env.JWT_KEY);
 
   return token;
 }
