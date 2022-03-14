@@ -14,7 +14,7 @@ function checkUser(user) {
 
 async function checkPassword(password, hashPassword) {
   const validPassword = await bcrypt.compare(password, hashPassword);
-  if (validPassword)
+  if (!validPassword)
     throw new InvalidArgumentError("Email or password invalid");
 }
 

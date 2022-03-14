@@ -9,8 +9,8 @@ const dbAll = promisify(db.all).bind(db);
 module.exports = {
   async add(user) {
     try {
-      await dbRun(
-        ` INSERT INTO users (name,email,hashPassword)
+      return await dbRun(
+        ` INSERT INTO users (name, email, hashPassword)
           VALUES (?, ?, ?)
         `,
         [user.name, user.email, user.hashPassword]
@@ -22,7 +22,7 @@ module.exports = {
 
   async getById(id) {
     try {
-      await dbGet(
+      return await dbGet(
         `
           SELECT *
           FROM users
@@ -37,7 +37,7 @@ module.exports = {
 
   async getByEmail(email) {
     try {
-      await dbGet(
+      return await dbGet(
         `
         SELECT *
         FROM users
@@ -52,7 +52,7 @@ module.exports = {
 
   async list() {
     try {
-      await dbAll(
+      return await dbAll(
         `
           SELECT * FROM users
         `
@@ -64,7 +64,7 @@ module.exports = {
 
   async delete(user) {
     try {
-      await dbRun(`DELETE FROM users WHERE id = ?`, [user.id]);
+      return await dbRun(`DELETE FROM users WHERE id = ?`, [user.id]);
     } catch (erro) {
       throw new InternalServerError(`Couldn't delete this user!`);
     }
