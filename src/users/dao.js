@@ -1,100 +1,72 @@
-const db = require('../../database');
-const { InternalServerError } = require('../errors');
+const db = require("../../database");
+const { InternalServerError } = require("../errors");
+
+const { promisify } = require("util");
+const dbRun = promisify(db.run).bind(db);
+const dbGet = promisify(db.get).bind(db);
+const dbAll = promisify(db.all).bind(db);
 
 module.exports = {
-  add: user => {
-    return new Promise((resolve, reject) => {
-      db.run(
-        `
-          INSERT INTO users (
-            name,
-            email,
-            hashPassword
-          ) VALUES (?, ?, ?)
+  async add(user) {
+    try {
+      await dbRun(
+        ` INSERT INTO users (name,email,hashPassword)
+          VALUES (?, ?, ?)
         `,
-        [user.name, user.email, user.hashPassword],
-        erro => {
-          if (erro) {
-            reject(new InternalServerError('Error trying to add user!'));
-          }
-
-          return resolve();
-        }
+        [user.name, user.email, user.hashPassword]
       );
-    });
+    } catch (error) {
+      throw new InternalServerError("Error trying to add user!");
+    }
   },
 
-  getById: id => {
-    return new Promise((resolve, reject) => {
-      db.get(
+  async getById(id) {
+    try {
+      await dbGet(
         `
           SELECT *
           FROM users
           WHERE id = ?
         `,
-        [id],
-        (erro, user) => {
-          if (erro) {
-            return reject(`Couldn't  find this user!`);
-          }
-
-          return resolve(user);
-        }
+        [id]
       );
-    });
+    } catch (error) {
+      throw new InternalServerError(`Couldn't find this user!`);
+    }
   },
 
-  getByEmail: email => {
-    return new Promise((resolve, reject) => {
-      db.get(
+  async getByEmail(email) {
+    try {
+      await dbGet(
         `
-          SELECT *
-          FROM users
-          WHERE email = ?
-        `,
-        [email],
-        (erro, user) => {
-          if (erro) {
-            return reject(`Couldn't find this user!`);
-          }
-
-          return resolve(user);
-        }
+        SELECT *
+        FROM users
+        WHERE email = ?
+      `,
+        [email]
       );
-    });
+    } catch (error) {
+      throw new InternalServerError(`Couldn't find this user!`);
+    }
   },
 
-  list: () => {
-    return new Promise((resolve, reject) => {
-      db.all(
+  async list() {
+    try {
+      await dbAll(
         `
           SELECT * FROM users
-        `,
-        (erro, users) => {
-          if (erro) {
-            return reject(`Couldn't list users!`);
-          }
-          return resolve(users);
-        }
+        `
       );
-    });
+    } catch (error) {
+      throw new InternalServerError(`Couldn't list users!`);
+    }
   },
 
-  delete: user => {
-    return new Promise((resolve, reject) => {
-      db.run(
-        `
-          DELETE FROM users
-          WHERE id = ?
-        `,
-        [user.id],
-        erro => {
-          if (erro) {
-            return reject(`Couldn't delete this user!`);
-          }
-          return resolve();
-        }
-      );
-    });
-  }
+  async delete(user) {
+    try {
+      await dbRun(`DELETE FROM users WHERE id = ?`, [user.id]);
+    } catch (erro) {
+      throw new InternalServerError(`Couldn't delete this user!`);
+    }
+  },
 };

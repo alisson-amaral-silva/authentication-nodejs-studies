@@ -15,7 +15,7 @@ function createJWTToken(user) {
 }
 
 module.exports = {
-  add: async (req, res) => {
+  async add(req, res) {
     const { name, email, password } = req.body;
 
     try {
@@ -40,12 +40,12 @@ module.exports = {
     }
   },
 
-  list: async (req, res) => {
+  async list(req, res) {
     const users = await User.list();
     res.json(users);
   },
 
-  delete: async (req, res) => {
+  async delete(req, res) {
     const user = await User.getById(req.params.id);
     try {
       await user.delete();
@@ -55,14 +55,14 @@ module.exports = {
     }
   },
 
-  login: (req, res) => {
+  async login(req, res) {
     const token = createJWTToken(req.user);
     res.set("Authorization", token);
     //this is 204 because it's useful for the user to know that the needed information it's on the headers
     res.status(204).send();
   },
 
-  logout: async (req,res) => {
+  async logout(req, res) {
     try {
       const token = req.token;
       await blacklist.add(token);
@@ -70,6 +70,5 @@ module.exports = {
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
-
-  }
+  },
 };
