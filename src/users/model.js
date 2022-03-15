@@ -1,7 +1,7 @@
-const daoUsers = require('./dao');
-const { InvalidArgumentError } = require('../errors');
-const validations = require('../default-validations');
-const bcrypt = require('bcrypt');
+const daoUsers = require("./dao");
+const { InvalidArgumentError } = require("../errors");
+const validations = require("../default-validations");
+const bcrypt = require("bcrypt");
 
 class User {
   constructor(user) {
@@ -14,38 +14,39 @@ class User {
   }
 
   async add() {
-    if (await User.getByEmail(this.email)) {
-      throw new InvalidArgumentError('User already exists');
+    if (await User.findByEmail(this.email)) {
+      throw new InvalidArgumentError("User already exists");
     }
 
-    return daoUsers.add(this);
+    await daoUsers.add(this);
+    const { id } = await daoUsers.findByEmail(this.email);
+    this.id = id;
   }
 
   check() {
-    validations.isStringFieldNotNull(this.name, 'name');
-    validations.isStringFieldNotNull(this.email, 'email');
+    validations.isStringFieldNotNull(this.name, "name");
+    validations.isStringFieldNotNull(this.email, "email");
   }
 
-  
   async delete() {
     return daoUsers.delete(this);
   }
-  
+
   static async findById(id) {
     const user = await daoUsers.findById(id);
     if (!user) {
       return null;
     }
-    
+
     return new User(user);
   }
-  
-  static async getByEmail(email) {
-    const user = await daoUsers.getByEmail(email);
+
+  static async findByEmail(email) {
+    const user = await daoUsers.findByEmail(email);
     if (!user) {
       return null;
     }
-    
+
     return new User(user);
   }
 
@@ -54,9 +55,9 @@ class User {
   }
 
   async addPassword(password) {
-    validations.isStringFieldNotNull(password, 'password');
-    validations.isFieldMinSize(password, 'password', 8);
-    validations.isFieldMaxSize(password, 'password', 64);
+    validations.isStringFieldNotNull(password, "password");
+    validations.isFieldMinSize(password, "password", 8);
+    validations.isFieldMaxSize(password, "password", 64);
 
     this.hashPassword = await User.generateHashPassword(password);
   }

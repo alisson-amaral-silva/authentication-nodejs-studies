@@ -1,6 +1,12 @@
 const User = require("./model");
 const { InvalidArgumentError, InternalServerError } = require("../errors");
 const tokens = require("./tokens");
+const { EmailCheck } = require("./emails");
+
+function generateAddress(route, userId) {
+  const baseUrl = process.env.BASE_URL;
+  return `${baseUrl}${route}${userId}`; 
+}
 
 module.exports = {
   async add(req, res) {
@@ -13,8 +19,11 @@ module.exports = {
       });
 
       await user.addPassword(password);
-
       await user.add();
+
+      const address = generateAddress('/user/email_check/', user.id);
+      const emailCheck = new EmailCheck(user, address);
+      emailCheck.sendEmail().catch(console.log);
 
       res.status(201).json();
     } catch (error) {

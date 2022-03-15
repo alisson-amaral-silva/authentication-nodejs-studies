@@ -35,7 +35,7 @@ module.exports = {
     }
   },
 
-  async getByEmail(email) {
+  async findByEmail(email) {
     try {
       return await dbGet(
         `

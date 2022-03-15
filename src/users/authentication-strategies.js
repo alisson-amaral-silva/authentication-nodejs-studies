@@ -26,7 +26,7 @@ passport.use(
     },
     async (email, password, done) => {
       try {
-        const user = await User.getByEmail(email);
+        const user = await User.findByEmail(email);
         checkUser(user);
         await checkPassword(password, user.hashPassword);
 
