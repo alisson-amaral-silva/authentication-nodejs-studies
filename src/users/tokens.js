@@ -29,6 +29,8 @@ async function checkJWTToken(token, blocklist, name) {
 }
 
 async function checkBlacklistToken(token, blocklist, name) {
+  if (!blocklist) return;
+
   const blocklistToken = await blocklist.hasToken(token);
   if (blocklistToken) {
     throw new jwt.JsonWebTokenError(`Invalid ${name} due logout!`);
@@ -84,6 +86,16 @@ module.exports = {
     },
     invalid(token) {
       return setRefreshTokenInvalid(token, this.list);
+    },
+  },
+  verifyEmail: {
+    name: "Verify email token",
+    expiration: [360],
+    create(id) {
+      return createJWTToken(id, this.expiration);
+    },
+    check(token) {
+      return checkJWTToken(token, null, this.name);
     },
   },
 };
