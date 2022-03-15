@@ -10,10 +10,10 @@ module.exports = {
   async add(user) {
     try {
       return await dbRun(
-        ` INSERT INTO users (name, email, hashPassword)
-          VALUES (?, ?, ?)
+        ` INSERT INTO users (name, email, hashPassword, verifyEmail)
+          VALUES (?, ?, ?, ?)
         `,
-        [user.name, user.email, user.hashPassword]
+        [user.name, user.email, user.hashPassword, user.verifyEmail]
       );
     } catch (error) {
       throw new InternalServerError("Error trying to add user!");

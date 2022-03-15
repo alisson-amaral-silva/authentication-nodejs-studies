@@ -9,6 +9,7 @@ class User {
     this.name = user.name;
     this.email = user.email;
     this.hashPassword = user.hashPassword;
+    this.verifyEmail = user.verifyEmail;
 
     this.check();
   }

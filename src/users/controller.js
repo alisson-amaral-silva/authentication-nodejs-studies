@@ -16,6 +16,7 @@ module.exports = {
       const user = new User({
         name,
         email,
+        verifyEmail: false
       });
 
       await user.addPassword(password);
