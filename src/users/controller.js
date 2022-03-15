@@ -5,7 +5,7 @@ const { EmailCheck } = require("./emails");
 
 function generateAddress(route, userId) {
   const baseUrl = process.env.BASE_URL;
-  return `${baseUrl}${route}${userId}`; 
+  return `${baseUrl}${route}${userId}`;
 }
 
 module.exports = {
@@ -16,13 +16,13 @@ module.exports = {
       const user = new User({
         name,
         email,
-        verifyEmail: false
+        verifyEmail: false,
       });
 
       await user.addPassword(password);
       await user.add();
 
-      const address = generateAddress('/user/email_check/', user.id);
+      const address = generateAddress("/user/verify_email/", user.id);
       const emailCheck = new EmailCheck(user, address);
       emailCheck.sendEmail().catch(console.log);
 
@@ -63,6 +63,16 @@ module.exports = {
       const refreshToken = await tokens.refresh.create(req.user.id);
       res.set("Authorization", accessToken);
       res.status(200).send({ refreshToken });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  },
+
+  async verifyEmail(req, res) {
+    try {
+      const user = req.user;
+      await user.emailCheck();
+      res.status(200).json();
     } catch (error) {
       res.status(500).json({ error: error.message });
     }

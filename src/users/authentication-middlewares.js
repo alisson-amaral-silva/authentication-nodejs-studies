@@ -2,8 +2,6 @@ const passport = require("passport");
 const User = require("./model");
 const tokens = require("./tokens");
 
-
-
 module.exports = {
   local(req, res, next) {
     passport.authenticate("local", { session: false }, (error, user, info) => {
@@ -60,9 +58,15 @@ module.exports = {
     } catch (error) {
       if (error.name === "InvalidArgumentError") {
         res.status(401).json({ error: error.message });
-      } else{
+      } else {
         res.status(500).json({ error: error.message });
       }
     }
+  },
+
+  async verifyEmail(req, res, next) {
+    const { id } = req.params;
+    req.user = await User.findById(id);
+    return next();
   },
 };
