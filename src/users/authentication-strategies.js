@@ -20,7 +20,7 @@ async function checkPassword(password, hashPassword) {
 
 async function checkBlacklistToken(token) { 
   const blocklistToken = await handleBlocklist.hasToken(token);
-  if(!blocklistToken){
+  if(blocklistToken){
     throw new jwt.JsonWebTokenError("Invalid token due logout!");
   }
 }

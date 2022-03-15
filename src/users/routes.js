@@ -2,6 +2,10 @@ const usersController = require("./controller");
 const authenticateMiddlewares = require("./authentication-middlewares");
 
 module.exports = (app) => {
+  app
+    .route("/user/update_token")
+    .post(authenticateMiddlewares.refresh, usersController.login);
+
   app.route("/user").post(usersController.add).get(usersController.list);
 
   app
@@ -10,7 +14,10 @@ module.exports = (app) => {
 
   app
     .route("/user/logout")
-    .get(authenticateMiddlewares.bearer, usersController.logout);
+    .post(
+      [authenticateMiddlewares.refresh, authenticateMiddlewares.bearer],
+      usersController.logout
+    );
 
   app
     .route("/user/:id")
