@@ -20,7 +20,7 @@ module.exports = {
     }
   },
 
-  async getById(id) {
+  async findById(id) {
     try {
       return await dbGet(
         `

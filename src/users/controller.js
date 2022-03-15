@@ -62,7 +62,7 @@ module.exports = {
   },
 
   async delete(req, res) {
-    const user = await User.getById(req.params.id);
+    const user = await User.findById(req.params.id);
     try {
       await user.delete();
       res.status(200).send();

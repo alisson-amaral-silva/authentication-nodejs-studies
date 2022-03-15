@@ -31,8 +31,8 @@ class User {
     return daoUsers.delete(this);
   }
   
-  static async getById(id) {
-    const user = await daoUsers.getById(id);
+  static async findById(id) {
+    const user = await daoUsers.findById(id);
     if (!user) {
       return null;
     }

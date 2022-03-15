@@ -51,7 +51,7 @@ passport.use(
     try {
       await checkBlacklistToken(token);
       const payload = jwt.verify(token, process.env.JWT_KEY);
-      const user = User.getById(payload.id);
+      const user = User.findById(payload.id);
       done(null, user, { token: token });
     } catch (error) {
       done(error);
