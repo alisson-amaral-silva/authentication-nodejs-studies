@@ -33,6 +33,11 @@ class User {
     return daoUsers.delete(this);
   }
 
+  async emailCheck() {
+    this.verifyEmail = true;
+    daoUsers.modifyVerifiedEmail(this, this.verifyEmail);
+  }
+
   static async findById(id) {
     const user = await daoUsers.findById(id);
     if (!user) {

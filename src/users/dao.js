@@ -50,6 +50,17 @@ module.exports = {
     }
   },
 
+  async modifyVerifiedEmail(user, verifyEmail) {
+    try {
+      await dbRun(`UPDATE users SET verifyEmail = ? WHERE id = ?`, [
+        verifyEmail,
+        user.id,
+      ]);
+    } catch (error) {
+      throw new InternalServerError(`Error on trying to update email check!`);
+    }
+  },
+
   async list() {
     try {
       return await dbAll(
