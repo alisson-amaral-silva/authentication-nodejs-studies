@@ -1,7 +1,8 @@
 const User = require("./model");
 const { InvalidArgumentError, InternalServerError } = require("../errors");
 const jwt = require("jsonwebtoken");
-const blacklist = require("../../redis/handle-blacklist");
+const blocklist = require("../../redis/handle-blocklist");
+const allowListRefresh = require("../../redis/allowlist-refresh-token");
 const crypto = require("crypto");
 const add = require("date-fns/add");
 const getUnixTime = require('date-fns/getUnixTime');
@@ -18,10 +19,11 @@ function createJWTToken(user) {
   return token;
 }
 
-function createRefreshToken(user) {
-  const refreshToken = crypto.randomBytes(24).toString("hex");
-  const expiredAt = getUnixTime(add(new Date(), { days: 5 }));
-  return refreshToken;
+async function createRefreshToken(user) {
+    const refreshToken = crypto.randomBytes(24).toString("hex");
+    const expiredAt = getUnixTime(add(new Date(), { days: 5 }));
+    await allowListRefresh.add(refreshToken, user.id, expiredAt);
+    return refreshToken;
 }
 
 module.exports = {
@@ -51,8 +53,12 @@ module.exports = {
   },
 
   async list(req, res) {
-    const users = await User.list();
-    res.json(users);
+    try {
+      const users = await User.list();
+      res.json(users);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
   },
 
   async delete(req, res) {
@@ -68,7 +74,7 @@ module.exports = {
   async login(req, res) {
     try {
       const accessToken = createJWTToken(req.user);
-      const refreshToken = createRefreshToken();
+      const refreshToken = await createRefreshToken(req.user);
       res.set("Authorization", accessToken);
       res.status(200).send({ refreshToken });
     } catch (error) {
@@ -79,7 +85,7 @@ module.exports = {
   async logout(req, res) {
     try {
       const token = req.token;
-      await blacklist.add(token);
+      await blocklist.add(token);
       res.status(204).send();
     } catch (error) {
       res.status(500).json({ error: error.message });

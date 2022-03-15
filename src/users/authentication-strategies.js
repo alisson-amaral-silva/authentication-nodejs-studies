@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 
 const User = require("./model");
 const { InvalidArgumentError } = require("../errors");
-const handleBlacklist = require("../../redis/handle-blacklist");
+const handleBlocklist = require("../../redis/handle-blocklist");
 
 function checkUser(user) {
   if (!user) throw new InvalidArgumentError("This user does not exist");
@@ -19,8 +19,8 @@ async function checkPassword(password, hashPassword) {
 }
 
 async function checkBlacklistToken(token) { 
-  const blacklistToken = await handleBlacklist.hasToken(token);
-  if(!blacklistToken){
+  const blocklistToken = await handleBlocklist.hasToken(token);
+  if(!blocklistToken){
     throw new jwt.JsonWebTokenError("Invalid token due logout!");
   }
 }
