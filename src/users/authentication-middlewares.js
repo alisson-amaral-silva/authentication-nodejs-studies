@@ -1,14 +1,8 @@
 const passport = require("passport");
 const User = require("./model");
-const { InvalidArgumentError } = require("../errors");
 const allowListRefreshToken = require("../../redis/allowlist-refresh-token");
+const tokens = require("./tokens");
 
-async function checkRefreshToken(refreshToken) {
-  if (!refreshToken) throw new InvalidArgumentError("Refresh token not sent");
-  const id = await allowListRefreshToken.getValue(refreshToken);
-  if (!id) throw new InvalidArgumentError("Refresh token invalid");
-  return id;
-}
 
 async function setRefreshTokenInvalid(refreshToken) {
   await allowListRefreshToken.delete(refreshToken);
@@ -62,7 +56,7 @@ module.exports = {
   async refresh(req, res, next) {
     try {
       const { refreshToken } = req.body;
-      const id = await checkRefreshToken(refreshToken); // check if there is a refresh token inside redis
+      const id = await tokens.refresh.check(refreshToken); // check if there is a refresh token inside redis
       await setRefreshTokenInvalid(refreshToken); // set old refresh token invalid
       req.user = await User.findById(id);
       return next();

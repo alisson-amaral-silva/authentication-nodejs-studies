@@ -3,6 +3,8 @@ const allowListRefresh = require("../../redis/allowlist-refresh-token");
 const crypto = require("crypto");
 const add = require("date-fns/add");
 const getUnixTime = require("date-fns/getUnixTime");
+const handleBlocklistAccessToken = require("../../redis/handle-blocklist");
+const { InvalidArgumentError } = require("../errors");
 
 function createJWTToken(id, [minutes]) {
   const payload = { id };
@@ -19,18 +21,60 @@ async function createRefreshToken(id, [days], allowList) {
   await allowList.add(refreshToken, id, expiredAt);
   return refreshToken;
 }
+
+async function checkJWTToken(token, blocklist, name) {
+  await checkBlacklistToken(token, blocklist, name);
+  const { id } = jwt.verify(token, process.env.JWT_KEY);
+  return id;
+}
+
+async function checkBlacklistToken(token, blocklist, name) {
+  const blocklistToken = await blocklist.hasToken(token);
+  if (blocklistToken) {
+    throw new jwt.JsonWebTokenError(`Invalid ${name} due logout!`);
+  }
+}
+
+function checkInvalidToken(id, name) {
+  if (!id)
+    throw new InvalidArgumentError(`${name} token invalid`);
+}
+
+function checkToken(refreshToken, name) {
+  if (!refreshToken)
+    throw new InvalidArgumentError(`${name} token not sent`);
+}
+
+
+async function checkRefreshToken(refreshToken, allowList, name) {
+  checkToken(refreshToken, name);
+  const id = await allowList.getValue(refreshToken);
+  checkInvalidToken(id, name);
+  return id;
+}
+
 module.exports = {
   access: {
     expiration: [15],
+    blocklist: handleBlocklistAccessToken,
+    name: "Access Token",
     create(id) {
       return createJWTToken(id, this.expiration);
+    },
+    check(token) {
+      return checkJWTToken(token, this.blocklist, this.name);
     },
   },
   refresh: {
     expiration: [5],
+    name: "Refresh token",
     list: allowListRefresh,
     create(id) {
       return createRefreshToken(id, this.expiration, this.list);
     },
+    check(token) {
+      return checkRefreshToken(token, this.list, this.name);
+    },
   },
 };
+
