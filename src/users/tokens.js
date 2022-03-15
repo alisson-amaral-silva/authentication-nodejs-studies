@@ -36,15 +36,12 @@ async function checkBlacklistToken(token, blocklist, name) {
 }
 
 function checkInvalidToken(id, name) {
-  if (!id)
-    throw new InvalidArgumentError(`${name} token invalid`);
+  if (!id) throw new InvalidArgumentError(`${name} token invalid`);
 }
 
 function checkToken(refreshToken, name) {
-  if (!refreshToken)
-    throw new InvalidArgumentError(`${name} token not sent`);
+  if (!refreshToken) throw new InvalidArgumentError(`${name} token not sent`);
 }
-
 
 async function checkRefreshToken(refreshToken, allowList, name) {
   checkToken(refreshToken, name);
@@ -53,16 +50,26 @@ async function checkRefreshToken(refreshToken, allowList, name) {
   return id;
 }
 
+async function setJWTTokenInvalid(token, blocklist) {
+  await blocklist.add(token);
+}
+
+async function setRefreshTokenInvalid(refreshToken, allowlist) {
+  await allowlist.delete(refreshToken);
+}
 module.exports = {
   access: {
     expiration: [15],
-    blocklist: handleBlocklistAccessToken,
+    list: handleBlocklistAccessToken,
     name: "Access Token",
     create(id) {
       return createJWTToken(id, this.expiration);
     },
     check(token) {
-      return checkJWTToken(token, this.blocklist, this.name);
+      return checkJWTToken(token, this.list, this.name);
+    },
+    invalid(token) {
+      return setJWTTokenInvalid(token, this.list);
     },
   },
   refresh: {
@@ -75,6 +82,8 @@ module.exports = {
     check(token) {
       return checkRefreshToken(token, this.list, this.name);
     },
+    invalid(token) {
+      return setRefreshTokenInvalid(token, this.list);
+    },
   },
 };
-

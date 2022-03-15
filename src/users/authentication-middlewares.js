@@ -1,12 +1,9 @@
 const passport = require("passport");
 const User = require("./model");
-const allowListRefreshToken = require("../../redis/allowlist-refresh-token");
 const tokens = require("./tokens");
 
 
-async function setRefreshTokenInvalid(refreshToken) {
-  await allowListRefreshToken.delete(refreshToken);
-}
+
 module.exports = {
   local(req, res, next) {
     passport.authenticate("local", { session: false }, (error, user, info) => {
@@ -57,7 +54,7 @@ module.exports = {
     try {
       const { refreshToken } = req.body;
       const id = await tokens.refresh.check(refreshToken); // check if there is a refresh token inside redis
-      await setRefreshTokenInvalid(refreshToken); // set old refresh token invalid
+      await tokens.refresh.invalid(refreshToken); // set old refresh token invalid
       req.user = await User.findById(id);
       return next();
     } catch (error) {

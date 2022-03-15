@@ -1,6 +1,5 @@
 const User = require("./model");
 const { InvalidArgumentError, InternalServerError } = require("../errors");
-const blocklist = require("../../redis/handle-blocklist");
 const tokens = require("./tokens");
 
 module.exports = {
@@ -62,7 +61,7 @@ module.exports = {
   async logout(req, res) {
     try {
       const token = req.token;
-      await blocklist.add(token);
+      await tokens.access.invalid(token);
       res.status(204).send();
     } catch (error) {
       res.status(500).json({ error: error.message });
