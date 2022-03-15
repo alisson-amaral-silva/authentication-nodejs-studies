@@ -1,30 +1,7 @@
 const User = require("./model");
 const { InvalidArgumentError, InternalServerError } = require("../errors");
-const jwt = require("jsonwebtoken");
 const blocklist = require("../../redis/handle-blocklist");
-const allowListRefresh = require("../../redis/allowlist-refresh-token");
-const crypto = require("crypto");
-const add = require("date-fns/add");
-const getUnixTime = require('date-fns/getUnixTime');
-
-
-function createJWTToken(user) {
-  const payload = {
-    id: user.id,
-  };
-  // this key was generated based on this node command through the terminal
-  // node -e "console.log( require('crypto').randomBytes(256).toString('base64') )"
-  const token = jwt.sign(payload, process.env.JWT_KEY, { expiresIn: "20m" });
-
-  return token;
-}
-
-async function createRefreshToken(user) {
-    const refreshToken = crypto.randomBytes(24).toString("hex");
-    const expiredAt = getUnixTime(add(new Date(), { days: 5 }));
-    await allowListRefresh.add(refreshToken, user.id, expiredAt);
-    return refreshToken;
-}
+const tokens = require("./tokens");
 
 module.exports = {
   async add(req, res) {
@@ -73,8 +50,8 @@ module.exports = {
 
   async login(req, res) {
     try {
-      const accessToken = createJWTToken(req.user);
-      const refreshToken = await createRefreshToken(req.user);
+      const accessToken = tokens.access.create(req.user.id);
+      const refreshToken = await tokens.refresh.create(req.user.id);
       res.set("Authorization", accessToken);
       res.status(200).send({ refreshToken });
     } catch (error) {
