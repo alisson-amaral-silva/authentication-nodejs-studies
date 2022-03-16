@@ -5,16 +5,8 @@ const tokens = require("./tokens");
 module.exports = {
   local(req, res, next) {
     passport.authenticate("local", { session: false }, (error, user, info) => {
-      if (error && error.name === "InvalidArgumentError") {
-        return res.status(401).json({ error: error.message });
-      }
-
       if (error) {
-        return res.status(500).json({ error: error.message });
-      }
-
-      if (!user) {
-        return res.status(401).json({ error: error.message });
+        return next(error);
       }
 
       req.user = user;
@@ -25,22 +17,8 @@ module.exports = {
 
   bearer(req, res, next) {
     passport.authenticate("bearer", { session: false }, (error, user, info) => {
-      if (error && error.name === "JsonWebTokenError") {
-        return res.status(401).json({ error: error.message });
-      }
-
-      if (error && error.name === "TokenExpiredError") {
-        return res
-          .status(401)
-          .json({ error: error.message, expiredAt: error.expiredAt });
-      }
-
       if (error) {
-        return res.status(500).json({ error: error.message });
-      }
-
-      if (!user) {
-        return res.status(401).json({ error: error.message });
+        return next(error);
       }
 
       req.token = info.token;
@@ -58,11 +36,7 @@ module.exports = {
       req.user = await User.findById(id);
       return next();
     } catch (error) {
-      if (error.name === "InvalidArgumentError") {
-        res.status(401).json({ error: error.message });
-      } else {
-        res.status(500).json({ error: error.message });
-      }
+      return next(error);
     }
   },
 
@@ -73,18 +47,7 @@ module.exports = {
       req.user = await User.findById(id);
       return next();
     } catch (error) {
-      if (error.name === "JsonWebTokenError") {
-        res.status(401).json({ error: error.message });
-      }
-      if (error && error.name === "TokenExpiredError") {
-        return res
-          .status(401)
-          .json({ error: error.message, expiredAt: error.expiredAt });
-      }
-
-      if (error) {
-        return res.status(500).json({ error: error.message });
-      }
+      return next(error);
     }
   },
 };

@@ -9,7 +9,7 @@ function generateAddress(route, token) {
 }
 
 module.exports = {
-  async add(req, res) {
+  async add(req, res, next) {
     const { name, email, password, role } = req.body;
 
     try {
@@ -17,7 +17,7 @@ module.exports = {
         name,
         email,
         verifyEmail: false,
-        role
+        role,
       });
 
       await user.addPassword(password);
@@ -30,63 +30,57 @@ module.exports = {
 
       res.status(201).json();
     } catch (error) {
-      if (error instanceof InvalidArgumentError) {
-        res.status(422).json({ error: error.message });
-      } else if (error instanceof InternalServerError) {
-        res.status(500).json({ error: error.message });
-      } else {
-        res.status(500).json({ error: error.message });
-      }
+      next(error);
     }
   },
 
-  async list(req, res) {
+  async list(req, res, next) {
     try {
       const users = await User.list();
       res.json(users);
     } catch (error) {
-      res.status(500).json({ error: error.message });
+      next(error);
     }
   },
 
-  async delete(req, res) {
+  async delete(req, res, next) {
     const user = await User.findById(req.params.id);
     try {
       await user.delete();
       res.status(200).send();
     } catch (error) {
-      res.status(500).json({ error: error.message });
+      next(error);
     }
   },
 
-  async login(req, res) {
+  async login(req, res, next) {
     try {
       const accessToken = tokens.access.create(req.user.id);
       const refreshToken = await tokens.refresh.create(req.user.id);
       res.set("Authorization", accessToken);
       res.status(200).send({ refreshToken });
     } catch (error) {
-      res.status(500).json({ error: error.message });
+      next(error);
     }
   },
 
-  async verifyEmail(req, res) {
+  async verifyEmail(req, res, next) {
     try {
       const user = req.user;
       await user.emailCheck();
       res.status(200).json();
     } catch (error) {
-      res.status(500).json({ error: error.message });
+      next(error);
     }
   },
 
-  async logout(req, res) {
+  async logout(req, res, next) {
     try {
       const token = req.token;
       await tokens.access.invalid(token);
       res.status(204).send();
     } catch (error) {
-      res.status(500).json({ error: error.message });
+      next(error);
     }
   },
 };
