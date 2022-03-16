@@ -1,11 +1,13 @@
 const postController = require("./controller");
 const { authenticationMiddlewares } = require("../users");
 const authorization = require("../middlewares/authorization");
+const tryAuthenticate = require("../middlewares/tryAuthenticate");
+const tryAuthorize = require("../middlewares/tryAuthorize");
 
 module.exports = (app) => {
   app
     .route("/post")
-    .get(postController.list)
+    .get([tryAuthenticate, tryAuthorize("post", "read")], postController.list)
     .post(
       [authenticationMiddlewares.bearer, authorization("post", "create")],
       postController.add

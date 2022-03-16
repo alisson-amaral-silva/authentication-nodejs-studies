@@ -21,7 +21,13 @@ module.exports = {
 
   async list(req, res) {
     try {
-      const posts = await Post.list();
+      let posts = await Post.list();
+      if (!req.isAuthenticated) {
+        posts = posts.map((post) => ({
+          title: post.title,
+          content: post.content,
+        }));
+      }
       res.send(posts);
     } catch (error) {
       return res.status(500).json({ error: error });
