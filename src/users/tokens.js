@@ -61,7 +61,7 @@ async function setRefreshTokenInvalid(refreshToken, allowlist) {
 }
 module.exports = {
   access: {
-    expiration: [15],
+    expiration: [3600],
     list: handleBlocklistAccessToken,
     name: "Access Token",
     create(id) {
@@ -90,7 +90,7 @@ module.exports = {
   },
   verifyEmail: {
     name: "Verify email token",
-    expiration: [360],
+    expiration: [3600],
     create(id) {
       return createJWTToken(id, this.expiration);
     },

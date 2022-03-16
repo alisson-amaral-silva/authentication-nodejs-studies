@@ -39,8 +39,9 @@ module.exports = {
 
   async delete(req, res) {
     try {
-      const post = await Post.findById(req.params.id, req.user.id);
-      post.remover();
+      const user = await req.user;
+      const post = await Post.findById(req.params.id, user.id);
+      post.delete();
       res.status(204);
       res.end();
     } catch (error) {

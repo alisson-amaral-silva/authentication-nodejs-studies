@@ -10,6 +10,7 @@ class User {
     this.email = user.email;
     this.hashPassword = user.hashPassword;
     this.verifyEmail = user.verifyEmail;
+    this.role = user.role;
 
     this.check();
   }
@@ -27,6 +28,9 @@ class User {
   check() {
     validations.isStringFieldNotNull(this.name, "name");
     validations.isStringFieldNotNull(this.email, "email");
+    const validRoles = ["admin", "editor", "subscriber"];
+    if (validRoles.indexOf(this.role) === -1)
+      throw new InvalidArgumentError("Role field is invalid");
   }
 
   async delete() {

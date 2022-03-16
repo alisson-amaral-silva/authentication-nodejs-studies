@@ -10,13 +10,14 @@ function generateAddress(route, token) {
 
 module.exports = {
   async add(req, res) {
-    const { name, email, password } = req.body;
+    const { name, email, password, role } = req.body;
 
     try {
       const user = new User({
         name,
         email,
         verifyEmail: false,
+        role
       });
 
       await user.addPassword(password);
