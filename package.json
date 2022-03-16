@@ -1,7 +1,7 @@
 {
-  "name": "blog-do-codigo",
+  "name": "code-blog",
   "version": "1.0.0",
-  "description": "Um blog simples em Node.js",
+  "description": "A Simple blog in Node.js",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
@@ -9,6 +9,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "accesscontrol": "^2.2.1",
     "bcrypt": "^5.0.1",
     "body-parser": "1.19.2",
     "date-fns": "^2.28.0",

@@ -1,12 +1,19 @@
 const usersController = require("./controller");
 const authenticateMiddlewares = require("./authentication-middlewares");
+const authorization = require("../middlewares/authorization");
 
 module.exports = (app) => {
   app
     .route("/user/update_token")
     .post(authenticateMiddlewares.refresh, usersController.login);
 
-  app.route("/user").post(usersController.add).get(usersController.list);
+  app
+    .route("/user")
+    .post(usersController.add)
+    .get(
+      [authenticateMiddlewares.bearer, authorization("user", "readAny")],
+      usersController.list
+    );
 
   app
     .route("/user/login")
@@ -19,7 +26,9 @@ module.exports = (app) => {
       usersController.logout
     );
 
-  app.route("/users/verify_email/:token").get(authenticateMiddlewares.verifyEmail,usersController.verifyEmail);
+  app
+    .route("/users/verify_email/:token")
+    .get(authenticateMiddlewares.verifyEmail, usersController.verifyEmail);
 
   app
     .route("/user/:id")

@@ -37,7 +37,7 @@ class Email {
 class EmailCheck extends Email {
   constructor(user, address) {
     super();
-    this.from = '"Blog do Código" <noreply@blogdocodigo.com.br>';
+    this.from = '"Code blog" <noreply@codeblog.com.br>';
     this.to = user.email;
     this.subject = "E-mail check";
     this.text = `Hello! check your email here: ${address}`;
