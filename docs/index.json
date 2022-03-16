@@ -1,0 +1,3497 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/accessControl.js",
+    "content": "const AccessControl = require(\"accesscontrol\");\r\nconst ac = new AccessControl();\r\n\r\nac.grant(\"subscriber\").readAny(\"post\", [\"id\", \"title\", \"content\", \"author\"]);\r\n\r\nac.grant(\"editor\").extend(\"subscriber\").createOwn(\"post\").deleteOwn(\"post\");\r\n\r\nac.grant(\"admin\")\r\n  .createAny(\"post\")\r\n  .deleteAny(\"post\")\r\n  .readAny(\"user\")\r\n  .deleteAny(\"user\");\r\n\r\nmodule.exports = ac;\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/accessControl.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "AccessControl",
+    "memberof": "src/accessControl.js",
+    "static": true,
+    "longname": "src/accessControl.js~AccessControl",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/accessControl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "ac",
+    "memberof": "src/accessControl.js",
+    "static": true,
+    "longname": "src/accessControl.js~ac",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/accessControl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "src/default-validations.js",
+    "content": "const { InvalidArgumentError } = require('./errors');\n\n\nmodule.exports = {\n  isStringFieldNotNull: (value, name) => {\n    if (typeof value !== 'string' || value === 0)\n      throw new InvalidArgumentError(`Field ${name} is missing!`);\n  },\n\n  isFieldMinSize: (value, name, min) => {\n    if (value.length < min)\n      throw new InvalidArgumentError(\n        `Field ${name} must be greater than or equal ${min} characters!`\n      );\n  },\n\n  isFieldMaxSize: (value, name, max) => {\n    if (value.length > max)\n      throw new InvalidArgumentError(\n        `Field ${name} must be less than ${max} characters!`\n      );\n  }\n};\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/default-validations.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/default-validations.js",
+    "static": true,
+    "longname": "src/default-validations.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/default-validations.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "src/errors.js",
+    "content": "class InvalidArgumentError extends Error {\n  constructor(message) {\n    super(message);\n    this.name = \"InvalidArgumentError\";\n  }\n}\n\nclass InternalServerError extends Error {\n  constructor(message) {\n    super(message);\n    this.name = \"InternalServerError\";\n  }\n}\n\nclass NotFoundError extends Error {\n  constructor(entity) {\n    const message = `${entity} not found`;\n    super(message);\n    this.name = \"NotFoundError\";\n  }\n}\n\nclass NotAuthorizedError extends Error {\n  constructor() {\n    const message = `Cannot access this resource`;\n    super(message);\n    this.name = \"NotAuthorizedError\";\n  }\n}\n\nmodule.exports = {\n  InvalidArgumentError: InvalidArgumentError,\n  InternalServerError: InternalServerError,\n  NotFoundError: NotFoundError,\n  NotAuthorizedError: NotAuthorizedError,\n};\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/errors.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "class",
+    "name": "InvalidArgumentError",
+    "memberof": "src/errors.js",
+    "static": true,
+    "longname": "src/errors.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/errors.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/errors.js~InvalidArgumentError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/errors.js~InvalidArgumentError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/errors.js~InvalidArgumentError",
+    "static": false,
+    "longname": "src/errors.js~InvalidArgumentError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "class",
+    "name": "InternalServerError",
+    "memberof": "src/errors.js",
+    "static": true,
+    "longname": "src/errors.js~InternalServerError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/errors.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/errors.js~InternalServerError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/errors.js~InternalServerError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/errors.js~InternalServerError",
+    "static": false,
+    "longname": "src/errors.js~InternalServerError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "class",
+    "name": "NotFoundError",
+    "memberof": "src/errors.js",
+    "static": true,
+    "longname": "src/errors.js~NotFoundError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/errors.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/errors.js~NotFoundError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/errors.js~NotFoundError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/errors.js~NotFoundError",
+    "static": false,
+    "longname": "src/errors.js~NotFoundError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "class",
+    "name": "NotAuthorizedError",
+    "memberof": "src/errors.js",
+    "static": true,
+    "longname": "src/errors.js~NotAuthorizedError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/errors.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/errors.js~NotAuthorizedError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/errors.js~NotAuthorizedError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/errors.js~NotAuthorizedError",
+    "static": false,
+    "longname": "src/errors.js~NotAuthorizedError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/middlewares/authorization.js",
+    "content": "const control = require(\"../accessControl\");\r\n\r\nconst methods = {\r\n  read: {\r\n    any: \"readAny\",\r\n    own: \"readOwn\",\r\n  },\r\n  create: {\r\n    any: \"createAny\",\r\n    own: \"createOwn\",\r\n  },\r\n  delete: {\r\n    any: \"deleteAny\",\r\n    own: \"deleteOwn\",\r\n  },\r\n};\r\n\r\nmodule.exports = (entity, action) => async (req, res, next) => {\r\n  const user = await req.user;\r\n  const rolePermissions = control.can(user.role);\r\n  const actions = methods[action];\r\n\r\n  const anyPermissions = rolePermissions[actions.any](entity);\r\n  const ownPermissions = rolePermissions[actions.own](entity);\r\n\r\n  if (anyPermissions.granted === false && ownPermissions.granted === false) {\r\n    res.status(403).send();\r\n    res.end();\r\n    return;\r\n  }\r\n\r\n  req.access = {\r\n    any: {\r\n      allow: anyPermissions.granted,\r\n      attributes: anyPermissions.attributes,\r\n    },\r\n    own: {\r\n      allow: ownPermissions.granted,\r\n      attributes: ownPermissions.attributes,\r\n    },\r\n  };\r\n  next();\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/middlewares/authorization.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "control",
+    "memberof": "src/middlewares/authorization.js",
+    "static": true,
+    "longname": "src/middlewares/authorization.js~control",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/middlewares/authorization.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "methods",
+    "memberof": "src/middlewares/authorization.js",
+    "static": true,
+    "longname": "src/middlewares/authorization.js~methods",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/middlewares/authorization.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"read\": *, \"create\": *, \"delete\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/middlewares/tryAuthenticate.js",
+    "content": "const { authenticationMiddlewares } = require(\"../users\");\r\nmodule.exports = (req, res, next) => {\r\n    req.isAuthenticated = false;\r\n    \r\n  if (req.get(\"Authorization\")) {\r\n    return authenticationMiddlewares.bearer(req, res, next);\r\n  }\r\n  next();\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/middlewares/tryAuthenticate.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "authenticationMiddlewares",
+    "memberof": "src/middlewares/tryAuthenticate.js",
+    "static": true,
+    "longname": "src/middlewares/tryAuthenticate.js~authenticationMiddlewares",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/middlewares/tryAuthenticate.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/middlewares/tryAuthorize.js",
+    "content": "const authorization = require(\"./authorization\");\r\n\r\nmodule.exports = (entity, action) => (req, res, next) => {\r\n  if (req.isAuthenticated) {\r\n    return authorization(entity, action)(req, res, next);\r\n  }\r\n  next();\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/middlewares/tryAuthorize.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "variable",
+    "name": "authorization",
+    "memberof": "src/middlewares/tryAuthorize.js",
+    "static": true,
+    "longname": "src/middlewares/tryAuthorize.js~authorization",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/middlewares/tryAuthorize.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "src/posts/controller.js",
+    "content": "const Post = require(\"./model\");\nconst { InvalidArgumentError, InternalServerError } = require(\"../errors\");\n\nmodule.exports = {\n  async add(req, res) {\n    try {\n      const post = new Post(req.body);\n      await post.add();\n\n      res.status(201).send(post);\n    } catch (error) {\n      if (error instanceof InvalidArgumentError) {\n        res.status(422).json({ error: error.message });\n      } else if (error instanceof InternalServerError) {\n        res.status(500).json({ error: error.message });\n      } else {\n        res.status(500).json({ error: error.message });\n      }\n    }\n  },\n\n  async list(req, res) {\n    try {\n      let posts = await Post.list();\n      if (!req.isAuthenticated) {\n        posts = posts.map((post) => ({\n          title: post.title,\n          content: post.content,\n        }));\n      }\n      res.send(posts);\n    } catch (error) {\n      return res.status(500).json({ error: error });\n    }\n  },\n\n  async getPostDetails(req, res) {\n    try {\n      const post = await Post.findById(req.params.id, req.user.id);\n      res.json(post);\n    } catch (error) {\n      return res.status(500).json({ error: error.message });\n    }\n  },\n\n  async delete(req, res) {\n    try {\n      const user = await req.user;\n      const post = await Post.findById(req.params.id, user.id);\n      post.delete();\n      res.status(204);\n      res.end();\n    } catch (error) {\n      return res.status(500).json({ error: error.message });\n    }\n  },\n};\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/posts/controller.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "Post",
+    "memberof": "src/posts/controller.js",
+    "static": true,
+    "longname": "src/posts/controller.js~Post",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/controller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/posts/controller.js",
+    "static": true,
+    "longname": "src/posts/controller.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/controller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/posts/dao.js",
+    "content": "const db = require(\"../../database\");\nconst { InternalServerError } = require(\"../errors\");\n\nconst { promisify } = require(\"util\");\nconst dbRun = promisify(db.run).bind(db);\nconst dbAll = promisify(db.all).bind(db);\nconst dbGet = promisify(db.get).bind(db);\n\nmodule.exports = {\n  async add(post) {\n    try {\n      return await dbRun(\n        `\n        INSERT INTO posts (\n          title, \n          content,\n          author\n        ) VALUES (?, ?, ?)\n      `,\n        [post.title, post.content, post.author]\n      );\n    } catch (error) {\n      throw new InternalServerError(\"Error trying to add a post!\");\n    }\n  },\n\n  async list() {\n    try {\n      return await dbAll(\n        `\n        SELECT * FROM posts\n        `\n      );\n    } catch (error) {\n      throw new InternalServerError(`Error trying to list posts!`);\n    }\n  },\n  async listById(authorId) {\n    try {\n      return await dbAll(\"SELECT id, title FROM posts WHERE author = ?\", [\n        authorId,\n      ]);\n    } catch (error) {\n      throw new InternalServerError(\"Error trying to list posts!\");\n    }\n  },\n\n  async findById(id, authorId) {\n    try {\n      return await dbGet(\"SELECT * FROM posts WHERE id = ? AND author = ?\", [\n        id,\n        authorId,\n      ]);\n    } catch (erro) {\n      throw new InternalServerError(`Couldn't find this post!`);\n    }\n  },\n\n  async delete({ id, author }) {\n    try {\n      return await dbRun(\"DELETE FROM posts WHERE id = ? AND author = ?\", [\n        id,\n        author,\n      ]);\n    } catch (error) {\n      throw new InternalServerError(\"Error trying to delete the post!\");\n    }\n  },\n};\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/posts/dao.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "db",
+    "memberof": "src/posts/dao.js",
+    "static": true,
+    "longname": "src/posts/dao.js~db",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "variable",
+    "name": "InternalServerError",
+    "memberof": "src/posts/dao.js",
+    "static": true,
+    "longname": "src/posts/dao.js~InternalServerError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "promisify",
+    "memberof": "src/posts/dao.js",
+    "static": true,
+    "longname": "src/posts/dao.js~promisify",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "variable",
+    "name": "dbRun",
+    "memberof": "src/posts/dao.js",
+    "static": true,
+    "longname": "src/posts/dao.js~dbRun",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "variable",
+    "name": "dbAll",
+    "memberof": "src/posts/dao.js",
+    "static": true,
+    "longname": "src/posts/dao.js~dbAll",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "variable",
+    "name": "dbGet",
+    "memberof": "src/posts/dao.js",
+    "static": true,
+    "longname": "src/posts/dao.js~dbGet",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "src/posts/index.js",
+    "content": "module.exports = {\n  postModel: require('./model'),\n  postRoutes: require('./routes'),\n  postController: require('./controller')\n};\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/posts/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "src/posts/model.js",
+    "content": "const postsDao = require(\"./dao\");\nconst validations = require(\"../default-validations\");\n\nclass Post {\n  constructor(post) {\n    this.id = post.id;\n    this.title = post.title;\n    this.content = post.content;\n    this.author = post.author;\n    this.check();\n  }\n\n  add() {\n    return postsDao.add(this);\n  }\n\n  check() {\n    validations.isStringFieldNotNull(this.title, \"title\");\n    validations.isFieldMinSize(this.title, \"title\", 5);\n\n    validations.isStringFieldNotNull(this.content, \"content\");\n    validations.isFieldMaxSize(this.content, \"content\", 140);\n  }\n\n  static list() {\n    return postsDao.list();\n  }\n\n  delete() {\n    return postsDao.delete(this);\n  }\n\n  static async listById(id, authorId) {\n    const post = await postsDao.listById(id, authorId);\n    if (!post) {\n      return null;\n    }\n\n    return new Post(post);\n  }\n\n  static async findById(id, authorId) {\n    const post = await postsDao.findById(id, authorId);\n    if (!post) {\n      return null;\n    }\n\n    return new Post(post);\n  }\n}\n\nmodule.exports = Post;\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/posts/model.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "variable",
+    "name": "postsDao",
+    "memberof": "src/posts/model.js",
+    "static": true,
+    "longname": "src/posts/model.js~postsDao",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/model.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "variable",
+    "name": "validations",
+    "memberof": "src/posts/model.js",
+    "static": true,
+    "longname": "src/posts/model.js~validations",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/model.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "class",
+    "name": "Post",
+    "memberof": "src/posts/model.js",
+    "static": true,
+    "longname": "src/posts/model.js~Post",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/model.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/posts/model.js~Post",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/posts/model.js~Post#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/posts/model.js~Post",
+    "static": false,
+    "longname": "src/posts/model.js~Post#id",
+    "access": "public",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "member",
+    "name": "title",
+    "memberof": "src/posts/model.js~Post",
+    "static": false,
+    "longname": "src/posts/model.js~Post#title",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "member",
+    "name": "content",
+    "memberof": "src/posts/model.js~Post",
+    "static": false,
+    "longname": "src/posts/model.js~Post#content",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "member",
+    "name": "author",
+    "memberof": "src/posts/model.js~Post",
+    "static": false,
+    "longname": "src/posts/model.js~Post#author",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "method",
+    "name": "add",
+    "memberof": "src/posts/model.js~Post",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/posts/model.js~Post#add",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "method",
+    "name": "check",
+    "memberof": "src/posts/model.js~Post",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/posts/model.js~Post#check",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "method",
+    "name": "list",
+    "memberof": "src/posts/model.js~Post",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/posts/model.js~Post.list",
+    "access": "public",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/posts/model.js~Post",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/posts/model.js~Post#delete",
+    "access": "public",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "listById",
+    "memberof": "src/posts/model.js~Post",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/posts/model.js~Post.listById",
+    "access": "public",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "authorId",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 98,
+    "kind": "method",
+    "name": "findById",
+    "memberof": "src/posts/model.js~Post",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/posts/model.js~Post.findById",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "authorId",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/posts/routes.js",
+    "content": "const postController = require(\"./controller\");\r\nconst { authenticationMiddlewares } = require(\"../users\");\r\nconst authorization = require(\"../middlewares/authorization\");\r\nconst tryAuthenticate = require(\"../middlewares/tryAuthenticate\");\r\nconst tryAuthorize = require(\"../middlewares/tryAuthorize\");\r\n\r\nmodule.exports = (app) => {\r\n  app\r\n    .route(\"/post\")\r\n    .get([tryAuthenticate, tryAuthorize(\"post\", \"read\")], postController.list)\r\n    .post(\r\n      [authenticationMiddlewares.bearer, authorization(\"post\", \"create\")],\r\n      postController.add\r\n    );\r\n\r\n  app\r\n    .route(\"/post/:id\")\r\n    .get(\r\n      [authenticationMiddlewares.bearer, authorization(\"post\", \"read\")],\r\n      postController.getPostDetails\r\n    )\r\n    .delete(\r\n      [authenticationMiddlewares.bearer, authorization(\"post\", \"delete\")],\r\n      postController.delete\r\n    );\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/posts/routes.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "variable",
+    "name": "postController",
+    "memberof": "src/posts/routes.js",
+    "static": true,
+    "longname": "src/posts/routes.js~postController",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/routes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "variable",
+    "name": "authenticationMiddlewares",
+    "memberof": "src/posts/routes.js",
+    "static": true,
+    "longname": "src/posts/routes.js~authenticationMiddlewares",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/routes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "variable",
+    "name": "authorization",
+    "memberof": "src/posts/routes.js",
+    "static": true,
+    "longname": "src/posts/routes.js~authorization",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/routes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "variable",
+    "name": "tryAuthenticate",
+    "memberof": "src/posts/routes.js",
+    "static": true,
+    "longname": "src/posts/routes.js~tryAuthenticate",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/routes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 104,
+    "kind": "variable",
+    "name": "tryAuthorize",
+    "memberof": "src/posts/routes.js",
+    "static": true,
+    "longname": "src/posts/routes.js~tryAuthorize",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/posts/routes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "file",
+    "name": "src/users/authentication-middlewares.js",
+    "content": "const passport = require(\"passport\");\r\nconst User = require(\"./model\");\r\nconst tokens = require(\"./tokens\");\r\n\r\nmodule.exports = {\r\n  local(req, res, next) {\r\n    passport.authenticate(\"local\", { session: false }, (error, user, info) => {\r\n      if (error) {\r\n        return next(error);\r\n      }\r\n\r\n      req.user = user;\r\n      req.isAuthenticated = true;\r\n      return next();\r\n    })(req, res, next);\r\n  },\r\n\r\n  bearer(req, res, next) {\r\n    passport.authenticate(\"bearer\", { session: false }, (error, user, info) => {\r\n      if (error) {\r\n        return next(error);\r\n      }\r\n\r\n      req.token = info.token;\r\n      req.user = user;\r\n      req.isAuthenticated = true;\r\n      return next();\r\n    })(req, res, next);\r\n  },\r\n\r\n  async refresh(req, res, next) {\r\n    try {\r\n      const { refreshToken } = req.body;\r\n      const id = await tokens.refresh.check(refreshToken); // check if there is a refresh token inside redis\r\n      await tokens.refresh.invalid(refreshToken); // set old refresh token invalid\r\n      req.user = await User.findById(id);\r\n      return next();\r\n    } catch (error) {\r\n      return next(error);\r\n    }\r\n  },\r\n\r\n  async verifyEmail(req, res, next) {\r\n    try {\r\n      const { token } = req.params;\r\n      const id = await tokens.verifyEmail.check(token);\r\n      req.user = await User.findById(id);\r\n      return next();\r\n    } catch (error) {\r\n      return next(error);\r\n    }\r\n  },\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/users/authentication-middlewares.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 106,
+    "kind": "variable",
+    "name": "passport",
+    "memberof": "src/users/authentication-middlewares.js",
+    "static": true,
+    "longname": "src/users/authentication-middlewares.js~passport",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-middlewares.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "variable",
+    "name": "User",
+    "memberof": "src/users/authentication-middlewares.js",
+    "static": true,
+    "longname": "src/users/authentication-middlewares.js~User",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-middlewares.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "variable",
+    "name": "tokens",
+    "memberof": "src/users/authentication-middlewares.js",
+    "static": true,
+    "longname": "src/users/authentication-middlewares.js~tokens",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-middlewares.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "file",
+    "name": "src/users/authentication-strategies.js",
+    "content": "const passport = require(\"passport\");\r\nconst LocalStrategy = require(\"passport-local\").Strategy;\r\nconst bcrypt = require(\"bcrypt\");\r\nconst BearerStrategy = require(\"passport-http-bearer\").Strategy;\r\nconst tokens = require('./tokens');\r\n\r\nconst User = require(\"./model\");\r\nconst { NotAuthorizedError } = require(\"../errors\");\r\n\r\nfunction checkUser(user) {\r\n  if (!user) throw new NotAuthorizedError();\r\n}\r\n\r\nasync function checkPassword(password, hashPassword) {\r\n  const validPassword = await bcrypt.compare(password, hashPassword);\r\n  if (!validPassword)\r\n    throw new NotAuthorizedError();\r\n}\r\n\r\npassport.use(\r\n  new LocalStrategy(\r\n    {\r\n      usernameField: \"email\",\r\n      passwordField: \"password\",\r\n      session: false,\r\n    },\r\n    async (email, password, done) => {\r\n      try {\r\n        const user = await User.findByEmail(email);\r\n        checkUser(user);\r\n        await checkPassword(password, user.hashPassword);\r\n\r\n        done(null, user);\r\n      } catch (error) {\r\n        done(error);\r\n      }\r\n    }\r\n  )\r\n);\r\n\r\npassport.use(\r\n  new BearerStrategy(async (token, done) => {\r\n    try {\r\n      const id = await tokens.access.check(token);\r\n      const user = User.findById(id);\r\n      done(null, user, { token: token });\r\n    } catch (error) {\r\n      done(error);\r\n    }\r\n  })\r\n);\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/users/authentication-strategies.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 110,
+    "kind": "variable",
+    "name": "passport",
+    "memberof": "src/users/authentication-strategies.js",
+    "static": true,
+    "longname": "src/users/authentication-strategies.js~passport",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-strategies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 111,
+    "kind": "variable",
+    "name": "LocalStrategy",
+    "memberof": "src/users/authentication-strategies.js",
+    "static": true,
+    "longname": "src/users/authentication-strategies.js~LocalStrategy",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-strategies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "variable",
+    "name": "bcrypt",
+    "memberof": "src/users/authentication-strategies.js",
+    "static": true,
+    "longname": "src/users/authentication-strategies.js~bcrypt",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-strategies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "variable",
+    "name": "BearerStrategy",
+    "memberof": "src/users/authentication-strategies.js",
+    "static": true,
+    "longname": "src/users/authentication-strategies.js~BearerStrategy",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-strategies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "variable",
+    "name": "tokens",
+    "memberof": "src/users/authentication-strategies.js",
+    "static": true,
+    "longname": "src/users/authentication-strategies.js~tokens",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-strategies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "variable",
+    "name": "User",
+    "memberof": "src/users/authentication-strategies.js",
+    "static": true,
+    "longname": "src/users/authentication-strategies.js~User",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-strategies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "variable",
+    "name": "NotAuthorizedError",
+    "memberof": "src/users/authentication-strategies.js",
+    "static": true,
+    "longname": "src/users/authentication-strategies.js~NotAuthorizedError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-strategies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "function",
+    "name": "checkUser",
+    "memberof": "src/users/authentication-strategies.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/users/authentication-strategies.js~checkUser",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-strategies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "user",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "checkPassword",
+    "memberof": "src/users/authentication-strategies.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/authentication-strategies.js~checkPassword",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/authentication-strategies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "password",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "hashPassword",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "file",
+    "name": "src/users/controller.js",
+    "content": "const User = require(\"./model\");\nconst { InvalidArgumentError, InternalServerError } = require(\"../errors\");\nconst tokens = require(\"./tokens\");\nconst { EmailCheck } = require(\"./emails\");\n\nfunction generateAddress(route, token) {\n  const baseUrl = process.env.BASE_URL;\n  return `${baseUrl}${route}${token}`;\n}\n\nmodule.exports = {\n  async add(req, res, next) {\n    const { name, email, password, role } = req.body;\n\n    try {\n      const user = new User({\n        name,\n        email,\n        verifyEmail: false,\n        role,\n      });\n\n      await user.addPassword(password);\n      await user.add();\n\n      const token = tokens.verifyEmail.create(user.id);\n      const address = generateAddress(\"/users/verify_email/\", token);\n      const emailCheck = new EmailCheck(user, address);\n      emailCheck.sendEmail().catch(console.log);\n\n      res.status(201).json();\n    } catch (error) {\n      next(error);\n    }\n  },\n\n  async list(req, res, next) {\n    try {\n      const users = await User.list();\n      res.json(users);\n    } catch (error) {\n      next(error);\n    }\n  },\n\n  async delete(req, res, next) {\n    const user = await User.findById(req.params.id);\n    try {\n      await user.delete();\n      res.status(200).send();\n    } catch (error) {\n      next(error);\n    }\n  },\n\n  async login(req, res, next) {\n    try {\n      const accessToken = tokens.access.create(req.user.id);\n      const refreshToken = await tokens.refresh.create(req.user.id);\n      res.set(\"Authorization\", accessToken);\n      res.status(200).send({ refreshToken });\n    } catch (error) {\n      next(error);\n    }\n  },\n\n  async verifyEmail(req, res, next) {\n    try {\n      const user = req.user;\n      await user.emailCheck();\n      res.status(200).json();\n    } catch (error) {\n      next(error);\n    }\n  },\n\n  async logout(req, res, next) {\n    try {\n      const token = req.token;\n      await tokens.access.invalid(token);\n      res.status(204).send();\n    } catch (error) {\n      next(error);\n    }\n  },\n};\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/users/controller.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 120,
+    "kind": "variable",
+    "name": "User",
+    "memberof": "src/users/controller.js",
+    "static": true,
+    "longname": "src/users/controller.js~User",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/controller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/users/controller.js",
+    "static": true,
+    "longname": "src/users/controller.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/controller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "variable",
+    "name": "tokens",
+    "memberof": "src/users/controller.js",
+    "static": true,
+    "longname": "src/users/controller.js~tokens",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/controller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "variable",
+    "name": "EmailCheck",
+    "memberof": "src/users/controller.js",
+    "static": true,
+    "longname": "src/users/controller.js~EmailCheck",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/controller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "function",
+    "name": "generateAddress",
+    "memberof": "src/users/controller.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/users/controller.js~generateAddress",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/controller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "route",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "file",
+    "name": "src/users/dao.js",
+    "content": "const db = require(\"../../database\");\nconst { InternalServerError } = require(\"../errors\");\n\nconst { promisify } = require(\"util\");\nconst dbRun = promisify(db.run).bind(db);\nconst dbGet = promisify(db.get).bind(db);\nconst dbAll = promisify(db.all).bind(db);\n\nmodule.exports = {\n  async add(user) {\n    try {\n      return await dbRun(\n        ` INSERT INTO users (name, email, hashPassword, verifyEmail, role)\n          VALUES (?, ?, ?, ?, ?)\n        `,\n        [user.name, user.email, user.hashPassword, user.verifyEmail, user.role]\n      );\n    } catch (error) {\n      throw new InternalServerError(\"Error trying to add user!\");\n    }\n  },\n\n  async findById(id) {\n    try {\n      return await dbGet(\n        `\n          SELECT *\n          FROM users\n          WHERE id = ?\n        `,\n        [id]\n      );\n    } catch (error) {\n      throw new InternalServerError(`Couldn't find this user!`);\n    }\n  },\n\n  async findByEmail(email) {\n    try {\n      return await dbGet(\n        `\n        SELECT *\n        FROM users\n        WHERE email = ?\n      `,\n        [email]\n      );\n    } catch (error) {\n      throw new InternalServerError(`Couldn't find this user!`);\n    }\n  },\n\n  async modifyVerifiedEmail(user, verifyEmail) {\n    try {\n      await dbRun(`UPDATE users SET verifyEmail = ? WHERE id = ?`, [\n        verifyEmail,\n        user.id,\n      ]);\n    } catch (error) {\n      throw new InternalServerError(`Error on trying to update email check!`);\n    }\n  },\n\n  async list() {\n    try {\n      return await dbAll(\n        `\n          SELECT * FROM users\n        `\n      );\n    } catch (error) {\n      throw new InternalServerError(`Couldn't list users!`);\n    }\n  },\n\n  async delete(user) {\n    try {\n      return await dbRun(`DELETE FROM users WHERE id = ?`, [user.id]);\n    } catch (erro) {\n      throw new InternalServerError(`Couldn't delete this user!`);\n    }\n  },\n};\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/users/dao.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 126,
+    "kind": "variable",
+    "name": "db",
+    "memberof": "src/users/dao.js",
+    "static": true,
+    "longname": "src/users/dao.js~db",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "variable",
+    "name": "InternalServerError",
+    "memberof": "src/users/dao.js",
+    "static": true,
+    "longname": "src/users/dao.js~InternalServerError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "variable",
+    "name": "promisify",
+    "memberof": "src/users/dao.js",
+    "static": true,
+    "longname": "src/users/dao.js~promisify",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 129,
+    "kind": "variable",
+    "name": "dbRun",
+    "memberof": "src/users/dao.js",
+    "static": true,
+    "longname": "src/users/dao.js~dbRun",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "variable",
+    "name": "dbGet",
+    "memberof": "src/users/dao.js",
+    "static": true,
+    "longname": "src/users/dao.js~dbGet",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "variable",
+    "name": "dbAll",
+    "memberof": "src/users/dao.js",
+    "static": true,
+    "longname": "src/users/dao.js~dbAll",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "file",
+    "name": "src/users/emails.js",
+    "content": "const nodemailer = require(\"nodemailer\");\r\n\r\nconst emailConfigurationTest = (testAccount) => ({\r\n  host: \"smtp.ethereal.email\",\r\n  auth: testAccount,\r\n});\r\n\r\nconst configurationProdEmail = {\r\n  host: process.env.HOST_EMAIL,\r\n  auth: {\r\n    user: process.env.USER_EMAIL,\r\n    password: process.env.USER_PASSWORD,\r\n  },\r\n  secure: true,\r\n};\r\n\r\nasync function createEmailConfig() {\r\n  if (process.env.NODE_ENV === \"production\") {\r\n    return configurationProdEmail;\r\n  } else {\r\n    const testAccount = await nodemailer.createTestAccount();\r\n    return emailConfigurationTest(testAccount);\r\n  }\r\n}\r\n\r\nclass Email {\r\n  async sendEmail() {\r\n    const configEmail = await createEmailConfig();\r\n    const transport = nodemailer.createTransport(configEmail);\r\n\r\n    const info = await transport.sendMail(this);\r\n    if (process.env.NODE_ENV !== \"production\")\r\n      console.log(\"URL: \", nodemailer.getTestMessageUrl(info));\r\n  }\r\n}\r\n\r\nclass EmailCheck extends Email {\r\n  constructor(user, address) {\r\n    super();\r\n    this.from = '\"Code blog\" <noreply@codeblog.com.br>';\r\n    this.to = user.email;\r\n    this.subject = \"E-mail check\";\r\n    this.text = `Hello! check your email here: ${address}`;\r\n    this.html = `<h1>Hello</h1> check your email here: <a href=\"${address}\">${address}</a>`;\r\n  }\r\n}\r\n\r\nmodule.exports = { EmailCheck };\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/users/emails.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 133,
+    "kind": "variable",
+    "name": "nodemailer",
+    "memberof": "src/users/emails.js",
+    "static": true,
+    "longname": "src/users/emails.js~nodemailer",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 134,
+    "kind": "function",
+    "name": "emailConfigurationTest",
+    "memberof": "src/users/emails.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/users/emails.js~emailConfigurationTest",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "testAccount",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "variable",
+    "name": "configurationProdEmail",
+    "memberof": "src/users/emails.js",
+    "static": true,
+    "longname": "src/users/emails.js~configurationProdEmail",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"host\": *, \"auth\": *, \"secure\": boolean}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "function",
+    "name": "createEmailConfig",
+    "memberof": "src/users/emails.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/emails.js~createEmailConfig",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 137,
+    "kind": "class",
+    "name": "Email",
+    "memberof": "src/users/emails.js",
+    "static": true,
+    "longname": "src/users/emails.js~Email",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "method",
+    "name": "sendEmail",
+    "memberof": "src/users/emails.js~Email",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/users/emails.js~Email#sendEmail",
+    "access": "public",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "class",
+    "name": "EmailCheck",
+    "memberof": "src/users/emails.js",
+    "static": true,
+    "longname": "src/users/emails.js~EmailCheck",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Email"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/users/emails.js~EmailCheck",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/users/emails.js~EmailCheck#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "member",
+    "name": "from",
+    "memberof": "src/users/emails.js~EmailCheck",
+    "static": false,
+    "longname": "src/users/emails.js~EmailCheck#from",
+    "access": "public",
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "member",
+    "name": "to",
+    "memberof": "src/users/emails.js~EmailCheck",
+    "static": false,
+    "longname": "src/users/emails.js~EmailCheck#to",
+    "access": "public",
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 143,
+    "kind": "member",
+    "name": "subject",
+    "memberof": "src/users/emails.js~EmailCheck",
+    "static": false,
+    "longname": "src/users/emails.js~EmailCheck#subject",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 144,
+    "kind": "member",
+    "name": "text",
+    "memberof": "src/users/emails.js~EmailCheck",
+    "static": false,
+    "longname": "src/users/emails.js~EmailCheck#text",
+    "access": "public",
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 145,
+    "kind": "member",
+    "name": "html",
+    "memberof": "src/users/emails.js~EmailCheck",
+    "static": false,
+    "longname": "src/users/emails.js~EmailCheck#html",
+    "access": "public",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 146,
+    "kind": "file",
+    "name": "src/users/index.js",
+    "content": "module.exports = {\n  userRoutes: require('./routes'),\n  userController: require('./controller'),\n  userModel: require('./model'),\n  authenticationStrategies: require('./authentication-strategies'),\n  authenticationMiddlewares: require('./authentication-middlewares')\n};",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/users/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 147,
+    "kind": "file",
+    "name": "src/users/model.js",
+    "content": "const daoUsers = require(\"./dao\");\nconst { InvalidArgumentError, NotFoundError } = require(\"../errors\");\nconst validations = require(\"../default-validations\");\nconst bcrypt = require(\"bcrypt\");\n/**\n * This user class is responsible to manage all operation related to the user\n */\nclass User {\n  /**\n   * The constructor receive the user data and add into the actual instance\n   * @param {object} user\n   */\n  constructor(user) {\n    this.id = user.id;\n    this.name = user.name;\n    this.email = user.email;\n    this.hashPassword = user.hashPassword;\n    this.verifyEmail = user.verifyEmail;\n    this.role = user.role;\n\n    this.check();\n  }\n\n  /**\n   * @throws {InvalidArgumentError} - this error will be thrown when the user has an e-mail already registered\n   */\n  async add() {\n    if (await User.findByEmail(this.email)) {\n      throw new InvalidArgumentError(\"User already exists\");\n    }\n\n    await daoUsers.add(this);\n    const { id } = await daoUsers.findByEmail(this.email);\n    this.id = id;\n  }\n\n  /**\n   * @throws {InvalidArgumentError} - this error will be thrown when you're not sending a valid role\n   */\n  check() {\n    validations.isStringFieldNotNull(this.name, \"name\");\n    validations.isStringFieldNotNull(this.email, \"email\");\n    const validRoles = [\"admin\", \"editor\", \"subscriber\"];\n    if (validRoles.indexOf(this.role) === -1)\n      throw new InvalidArgumentError(\"Role field is invalid\");\n  }\n\n  async delete() {\n    return daoUsers.delete(this);\n  }\n\n  async emailCheck() {\n    this.verifyEmail = true;\n    daoUsers.modifyVerifiedEmail(this, this.verifyEmail);\n  }\n\n  static async findById(id) {\n    const user = await daoUsers.findById(id);\n    if (!user) {\n      throw new NotFoundError(\"user\");\n    }\n\n    return new User(user);\n  }\n\n  static async findByEmail(email) {\n    const user = await daoUsers.findByEmail(email);\n    if (!user) {\n      throw new NotFoundError(\"user\");\n    }\n\n    return new User(user);\n  }\n\n  static list() {\n    return daoUsers.list();\n  }\n\n  async addPassword(password) {\n    validations.isStringFieldNotNull(password, \"password\");\n    validations.isFieldMinSize(password, \"password\", 8);\n    validations.isFieldMaxSize(password, \"password\", 64);\n\n    this.hashPassword = await User.generateHashPassword(password);\n  }\n\n  static generateHashPassword(password) {\n    const hashCost = 12;\n    return bcrypt.hash(password, hashCost);\n  }\n}\n\nmodule.exports = User;\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/users/model.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 148,
+    "kind": "variable",
+    "name": "daoUsers",
+    "memberof": "src/users/model.js",
+    "static": true,
+    "longname": "src/users/model.js~daoUsers",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/model.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 149,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/users/model.js",
+    "static": true,
+    "longname": "src/users/model.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/model.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "variable",
+    "name": "validations",
+    "memberof": "src/users/model.js",
+    "static": true,
+    "longname": "src/users/model.js~validations",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/model.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "variable",
+    "name": "bcrypt",
+    "memberof": "src/users/model.js",
+    "static": true,
+    "longname": "src/users/model.js~bcrypt",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/model.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "class",
+    "name": "User",
+    "memberof": "src/users/model.js",
+    "static": true,
+    "longname": "src/users/model.js~User",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/model.js",
+    "importStyle": null,
+    "description": "This user class is responsible to manage all operation related to the user",
+    "lineNumber": 8,
+    "interface": false
+  },
+  {
+    "__docId__": 153,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/users/model.js~User#constructor",
+    "access": "public",
+    "description": "The constructor receive the user data and add into the actual instance",
+    "lineNumber": 13,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "user",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 154,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/users/model.js~User",
+    "static": false,
+    "longname": "src/users/model.js~User#id",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 155,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/users/model.js~User",
+    "static": false,
+    "longname": "src/users/model.js~User#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 156,
+    "kind": "member",
+    "name": "email",
+    "memberof": "src/users/model.js~User",
+    "static": false,
+    "longname": "src/users/model.js~User#email",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 157,
+    "kind": "member",
+    "name": "hashPassword",
+    "memberof": "src/users/model.js~User",
+    "static": false,
+    "longname": "src/users/model.js~User#hashPassword",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 158,
+    "kind": "member",
+    "name": "verifyEmail",
+    "memberof": "src/users/model.js~User",
+    "static": false,
+    "longname": "src/users/model.js~User#verifyEmail",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 159,
+    "kind": "member",
+    "name": "role",
+    "memberof": "src/users/model.js~User",
+    "static": false,
+    "longname": "src/users/model.js~User#role",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 160,
+    "kind": "method",
+    "name": "add",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/users/model.js~User#add",
+    "access": "public",
+    "description": "",
+    "lineNumber": 27,
+    "throws": [
+      {
+        "types": [
+          "InvalidArgumentError"
+        ],
+        "description": "this error will be thrown when the user has an e-mail already registered"
+      }
+    ],
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 162,
+    "kind": "method",
+    "name": "check",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/users/model.js~User#check",
+    "access": "public",
+    "description": "",
+    "lineNumber": 40,
+    "throws": [
+      {
+        "types": [
+          "InvalidArgumentError"
+        ],
+        "description": "this error will be thrown when you're not sending a valid role"
+      }
+    ],
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 163,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/users/model.js~User#delete",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 164,
+    "kind": "method",
+    "name": "emailCheck",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/users/model.js~User#emailCheck",
+    "access": "public",
+    "description": null,
+    "lineNumber": 52,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 166,
+    "kind": "method",
+    "name": "findById",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/model.js~User.findById",
+    "access": "public",
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 167,
+    "kind": "method",
+    "name": "findByEmail",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/model.js~User.findByEmail",
+    "access": "public",
+    "description": null,
+    "lineNumber": 66,
+    "undocument": true,
+    "params": [
+      {
+        "name": "email",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 168,
+    "kind": "method",
+    "name": "list",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/users/model.js~User.list",
+    "access": "public",
+    "description": null,
+    "lineNumber": 75,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 169,
+    "kind": "method",
+    "name": "addPassword",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/users/model.js~User#addPassword",
+    "access": "public",
+    "description": null,
+    "lineNumber": 79,
+    "undocument": true,
+    "params": [
+      {
+        "name": "password",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 171,
+    "kind": "method",
+    "name": "generateHashPassword",
+    "memberof": "src/users/model.js~User",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/users/model.js~User.generateHashPassword",
+    "access": "public",
+    "description": null,
+    "lineNumber": 87,
+    "undocument": true,
+    "params": [
+      {
+        "name": "password",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 172,
+    "kind": "file",
+    "name": "src/users/routes.js",
+    "content": "const usersController = require(\"./controller\");\r\nconst authenticateMiddlewares = require(\"./authentication-middlewares\");\r\nconst authorization = require(\"../middlewares/authorization\");\r\n\r\nmodule.exports = (app) => {\r\n  app\r\n    .route(\"/user/update_token\")\r\n    .post(authenticateMiddlewares.refresh, usersController.login);\r\n\r\n  app\r\n    .route(\"/user\")\r\n    .post(usersController.add)\r\n    .get(\r\n      [authenticateMiddlewares.bearer, authorization(\"user\", \"readAny\")],\r\n      usersController.list\r\n    );\r\n\r\n  app\r\n    .route(\"/user/login\")\r\n    .post(authenticateMiddlewares.local, usersController.login);\r\n\r\n  app\r\n    .route(\"/user/logout\")\r\n    .post(\r\n      [authenticateMiddlewares.refresh, authenticateMiddlewares.bearer],\r\n      usersController.logout\r\n    );\r\n\r\n  app\r\n    .route(\"/users/verify_email/:token\")\r\n    .get(authenticateMiddlewares.verifyEmail, usersController.verifyEmail);\r\n\r\n  app\r\n    .route(\"/user/:id\")\r\n    .delete(authenticateMiddlewares.bearer, usersController.delete);\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/users/routes.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 173,
+    "kind": "variable",
+    "name": "usersController",
+    "memberof": "src/users/routes.js",
+    "static": true,
+    "longname": "src/users/routes.js~usersController",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/routes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 174,
+    "kind": "variable",
+    "name": "authenticateMiddlewares",
+    "memberof": "src/users/routes.js",
+    "static": true,
+    "longname": "src/users/routes.js~authenticateMiddlewares",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/routes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 175,
+    "kind": "variable",
+    "name": "authorization",
+    "memberof": "src/users/routes.js",
+    "static": true,
+    "longname": "src/users/routes.js~authorization",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/routes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 176,
+    "kind": "file",
+    "name": "src/users/tokens.js",
+    "content": "const jwt = require(\"jsonwebtoken\");\r\nconst allowListRefresh = require(\"../../redis/allowlist-refresh-token\");\r\nconst crypto = require(\"crypto\");\r\nconst add = require(\"date-fns/add\");\r\nconst getUnixTime = require(\"date-fns/getUnixTime\");\r\nconst handleBlocklistAccessToken = require(\"../../redis/handle-blocklist\");\r\nconst { InvalidArgumentError } = require(\"../errors\");\r\n\r\nfunction createJWTToken(id, [minutes]) {\r\n  const payload = { id };\r\n  // this key was generated based on this node command through the terminal\r\n  // node -e \"console.log( require('crypto').randomBytes(256).toString('base64') )\"\r\n  const token = jwt.sign(payload, process.env.JWT_KEY, { expiresIn: minutes });\r\n\r\n  return token;\r\n}\r\n\r\nasync function createRefreshToken(id, [days], allowList) {\r\n  const refreshToken = crypto.randomBytes(24).toString(\"hex\");\r\n  const expiredAt = getUnixTime(add(new Date(), { days: days }));\r\n  await allowList.add(refreshToken, id, expiredAt);\r\n  return refreshToken;\r\n}\r\n\r\nasync function checkJWTToken(token, blocklist, name) {\r\n  await checkBlacklistToken(token, blocklist, name);\r\n  const { id } = jwt.verify(token, process.env.JWT_KEY);\r\n  return id;\r\n}\r\n\r\nasync function checkBlacklistToken(token, blocklist, name) {\r\n  if (!blocklist) return;\r\n\r\n  const blocklistToken = await blocklist.hasToken(token);\r\n  if (blocklistToken) {\r\n    throw new jwt.JsonWebTokenError(`Invalid ${name} due logout!`);\r\n  }\r\n}\r\n\r\nfunction checkInvalidToken(id, name) {\r\n  if (!id) throw new InvalidArgumentError(`${name} token invalid`);\r\n}\r\n\r\nfunction checkToken(refreshToken, name) {\r\n  if (!refreshToken) throw new InvalidArgumentError(`${name} token not sent`);\r\n}\r\n\r\nasync function checkRefreshToken(refreshToken, allowList, name) {\r\n  checkToken(refreshToken, name);\r\n  const id = await allowList.getValue(refreshToken);\r\n  checkInvalidToken(id, name);\r\n  return id;\r\n}\r\n\r\nasync function setJWTTokenInvalid(token, blocklist) {\r\n  await blocklist.add(token);\r\n}\r\n\r\nasync function setRefreshTokenInvalid(refreshToken, allowlist) {\r\n  await allowlist.delete(refreshToken);\r\n}\r\nmodule.exports = {\r\n  access: {\r\n    expiration: [3600],\r\n    list: handleBlocklistAccessToken,\r\n    name: \"Access Token\",\r\n    create(id) {\r\n      return createJWTToken(id, this.expiration);\r\n    },\r\n    check(token) {\r\n      return checkJWTToken(token, this.list, this.name);\r\n    },\r\n    invalid(token) {\r\n      return setJWTTokenInvalid(token, this.list);\r\n    },\r\n  },\r\n  refresh: {\r\n    expiration: [5],\r\n    name: \"Refresh token\",\r\n    list: allowListRefresh,\r\n    create(id) {\r\n      return createRefreshToken(id, this.expiration, this.list);\r\n    },\r\n    check(token) {\r\n      return checkRefreshToken(token, this.list, this.name);\r\n    },\r\n    invalid(token) {\r\n      return setRefreshTokenInvalid(token, this.list);\r\n    },\r\n  },\r\n  verifyEmail: {\r\n    name: \"Verify email token\",\r\n    expiration: [3600],\r\n    create(id) {\r\n      return createJWTToken(id, this.expiration);\r\n    },\r\n    check(token) {\r\n      return checkJWTToken(token, null, this.name);\r\n    },\r\n  },\r\n};\r\n",
+    "static": true,
+    "longname": "C:/Users/aalis/Documents/cursos/nodejs/authentication-nodejs-studies/src/users/tokens.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 177,
+    "kind": "variable",
+    "name": "jwt",
+    "memberof": "src/users/tokens.js",
+    "static": true,
+    "longname": "src/users/tokens.js~jwt",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "variable",
+    "name": "allowListRefresh",
+    "memberof": "src/users/tokens.js",
+    "static": true,
+    "longname": "src/users/tokens.js~allowListRefresh",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 179,
+    "kind": "variable",
+    "name": "crypto",
+    "memberof": "src/users/tokens.js",
+    "static": true,
+    "longname": "src/users/tokens.js~crypto",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 180,
+    "kind": "variable",
+    "name": "add",
+    "memberof": "src/users/tokens.js",
+    "static": true,
+    "longname": "src/users/tokens.js~add",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 181,
+    "kind": "variable",
+    "name": "getUnixTime",
+    "memberof": "src/users/tokens.js",
+    "static": true,
+    "longname": "src/users/tokens.js~getUnixTime",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 182,
+    "kind": "variable",
+    "name": "handleBlocklistAccessToken",
+    "memberof": "src/users/tokens.js",
+    "static": true,
+    "longname": "src/users/tokens.js~handleBlocklistAccessToken",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 183,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/users/tokens.js",
+    "static": true,
+    "longname": "src/users/tokens.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 184,
+    "kind": "function",
+    "name": "createJWTToken",
+    "memberof": "src/users/tokens.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/users/tokens.js~createJWTToken",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "arrayPattern1",
+        "types": [
+          "*[]"
+        ],
+        "defaultRaw": [
+          "null"
+        ],
+        "defaultValue": "[null]"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 185,
+    "kind": "function",
+    "name": "createRefreshToken",
+    "memberof": "src/users/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/tokens.js~createRefreshToken",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "arrayPattern1",
+        "types": [
+          "*[]"
+        ],
+        "defaultRaw": [
+          "null"
+        ],
+        "defaultValue": "[null]"
+      },
+      {
+        "name": "allowList",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 186,
+    "kind": "function",
+    "name": "checkJWTToken",
+    "memberof": "src/users/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/tokens.js~checkJWTToken",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "blocklist",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 187,
+    "kind": "function",
+    "name": "checkBlacklistToken",
+    "memberof": "src/users/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/tokens.js~checkBlacklistToken",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "blocklist",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 188,
+    "kind": "function",
+    "name": "checkInvalidToken",
+    "memberof": "src/users/tokens.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/users/tokens.js~checkInvalidToken",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 189,
+    "kind": "function",
+    "name": "checkToken",
+    "memberof": "src/users/tokens.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/users/tokens.js~checkToken",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "params": [
+      {
+        "name": "refreshToken",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 190,
+    "kind": "function",
+    "name": "checkRefreshToken",
+    "memberof": "src/users/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/tokens.js~checkRefreshToken",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "params": [
+      {
+        "name": "refreshToken",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "allowList",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 191,
+    "kind": "function",
+    "name": "setJWTTokenInvalid",
+    "memberof": "src/users/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/tokens.js~setJWTTokenInvalid",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "blocklist",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 192,
+    "kind": "function",
+    "name": "setRefreshTokenInvalid",
+    "memberof": "src/users/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/users/tokens.js~setRefreshTokenInvalid",
+    "access": "public",
+    "export": false,
+    "importPath": "code-blog/src/users/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "params": [
+      {
+        "name": "refreshToken",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "allowlist",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# Authentication nodejs study",
+    "longname": "C:\\Users\\aalis\\Documents\\cursos\\nodejs\\authentication-nodejs-studies\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"code-blog\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A Simple blog in Node.js\",\n  \"main\": \"server.js\",\n  \"scripts\": {\n    \"start\": \"nodemon server.js\",\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"accesscontrol\": \"^2.2.1\",\n    \"bcrypt\": \"^5.0.1\",\n    \"body-parser\": \"1.19.2\",\n    \"date-fns\": \"^2.28.0\",\n    \"dotenv\": \"^16.0.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"express\": \"4.17.3\",\n    \"jsonwebtoken\": \"^8.5.1\",\n    \"nodemailer\": \"6.4.8\",\n    \"nodemon\": \"2.0.15\",\n    \"passport\": \"^0.5.2\",\n    \"passport-http-bearer\": \"^1.0.1\",\n    \"passport-local\": \"^1.0.0\",\n    \"redis\": \"^3.0.2\",\n    \"sqlite3\": \"5.0.2\"\n  },\n  \"devDependencies\": {\n    \"eslint\": \"^8.11.0\",\n    \"prettier\": \"2.6.0\"\n  },\n  \"jshintConfig\": {\n    \"esversion\": 8\n  }\n}\n",
+    "longname": "C:\\Users\\aalis\\Documents\\cursos\\nodejs\\authentication-nodejs-studies\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

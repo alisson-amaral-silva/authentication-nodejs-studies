@@ -1,0 +1,233 @@
+{
+  "coverage": "3.27%",
+  "expectCount": 122,
+  "actualCount": 4,
+  "files": {
+    "src/accessControl.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2
+      ]
+    },
+    "src/default-validations.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/errors.js": {
+      "expectCount": 12,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        11,
+        15,
+        16,
+        19,
+        23,
+        24,
+        27
+      ]
+    },
+    "src/middlewares/authorization.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        3
+      ]
+    },
+    "src/middlewares/tryAuthenticate.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/middlewares/tryAuthorize.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/posts/controller.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2
+      ]
+    },
+    "src/posts/dao.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "src/posts/model.js": {
+      "expectCount": 14,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        17,
+        25,
+        29,
+        33,
+        42
+      ]
+    },
+    "src/posts/routes.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "src/users/authentication-middlewares.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3
+      ]
+    },
+    "src/users/authentication-strategies.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        14
+      ]
+    },
+    "src/users/controller.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "src/users/dao.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "src/users/emails.js": {
+      "expectCount": 13,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        3,
+        8,
+        17,
+        26,
+        27,
+        37,
+        38,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    "src/users/model.js": {
+      "expectCount": 21,
+      "actualCount": 4,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        48,
+        52,
+        57,
+        66,
+        75,
+        79,
+        87
+      ]
+    },
+    "src/users/routes.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3
+      ]
+    },
+    "src/users/tokens.js": {
+      "expectCount": 16,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        18,
+        25,
+        31,
+        40,
+        44,
+        48,
+        55,
+        59
+      ]
+    }
+  }
+}

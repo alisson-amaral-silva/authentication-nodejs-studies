@@ -2,8 +2,14 @@ const daoUsers = require("./dao");
 const { InvalidArgumentError, NotFoundError } = require("../errors");
 const validations = require("../default-validations");
 const bcrypt = require("bcrypt");
-
+/**
+ * This user class is responsible to manage all operation related to the user
+ */
 class User {
+  /**
+   * The constructor receive the user data and add into the actual instance
+   * @param {object} user
+   */
   constructor(user) {
     this.id = user.id;
     this.name = user.name;
@@ -15,6 +21,9 @@ class User {
     this.check();
   }
 
+  /**
+   * @throws {InvalidArgumentError} - this error will be thrown when the user has an e-mail already registered
+   */
   async add() {
     if (await User.findByEmail(this.email)) {
       throw new InvalidArgumentError("User already exists");
@@ -25,6 +34,9 @@ class User {
     this.id = id;
   }
 
+  /**
+   * @throws {InvalidArgumentError} - this error will be thrown when you're not sending a valid role
+   */
   check() {
     validations.isStringFieldNotNull(this.name, "name");
     validations.isStringFieldNotNull(this.email, "email");
