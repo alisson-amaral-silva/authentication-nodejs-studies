@@ -7,15 +7,18 @@ module.exports = (app) => {
     .route("/post")
     .get(postController.list)
     .post(
-      [authenticationMiddlewares.bearer, authorization(["admin", "editor"])],
+      [authenticationMiddlewares.bearer, authorization("post", "create")],
       postController.add
     );
 
   app
     .route("/post/:id")
-    .get(authenticationMiddlewares.bearer, postController.getPostDetails)
+    .get(
+      [authenticationMiddlewares.bearer, authorization("post", "read")],
+      postController.getPostDetails
+    )
     .delete(
-      [authenticationMiddlewares.bearer, authorization(["admin", "editor"])],
+      [authenticationMiddlewares.bearer, authorization("post", "delete")],
       postController.delete
     );
 };
