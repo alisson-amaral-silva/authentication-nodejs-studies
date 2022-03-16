@@ -3,6 +3,14 @@ const authenticateMiddlewares = require("./authentication-middlewares");
 const authorization = require("../middlewares/authorization");
 
 module.exports = (app) => {
+
+  app
+    .route('/user/forgot_password')
+    .post(usersController.forgotPassword);
+
+  app
+    .route('/user/change_password')
+    .post(usersController.changePassword);
   app
     .route("/user/update_token")
     .post(authenticateMiddlewares.refresh, usersController.login);

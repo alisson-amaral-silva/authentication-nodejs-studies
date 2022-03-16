@@ -1,10 +1,14 @@
 const jwt = require("jsonwebtoken");
-const allowListRefresh = require("../../redis/allowlist-refresh-token");
 const crypto = require("crypto");
 const add = require("date-fns/add");
 const getUnixTime = require("date-fns/getUnixTime");
-const handleBlocklistAccessToken = require("../../redis/handle-blocklist");
 const { InvalidArgumentError } = require("../errors");
+
+
+const handleBlocklistAccessToken = require("../../redis/handle-blocklist");
+const allowListRefresh = require("../../redis/allowlist-refresh-token");
+const resetPassword = require("../../redis/reset-password-list");
+const resetPasswordList = require("../../redis/reset-password-list");
 
 function createJWTToken(id, [minutes]) {
   const payload = { id };
@@ -97,5 +101,16 @@ module.exports = {
     check(token) {
       return checkJWTToken(token, null, this.name);
     },
+  },  
+  resetPassword: {
+    name: "Reset password",
+    expiration: [6000],
+    list: resetPasswordList,
+    create(id) {
+      return createRefreshToken(id, this.expiration, this.list);
+    },
+    check(token) {
+      return checkRefreshToken(token, this.list, this.name);
+    }
   },
 };

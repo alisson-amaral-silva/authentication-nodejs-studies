@@ -45,4 +45,15 @@ class EmailCheck extends Email {
   }
 }
 
-module.exports = { EmailCheck };
+class ResetEmail extends Email {
+  constructor(user, token) {
+    super();
+    this.from = '"Code blog" <noreply@codeblog.com.br>';
+    this.to = user.email;
+    this.subject = "E-mail check";
+    this.text = `Hello! reset password solicitation`;
+    this.html = `<h1>Hello</h1> <p>here is a token to reset your password ${token}</p>`;
+  }
+}
+
+module.exports = { EmailCheck, ResetEmail };

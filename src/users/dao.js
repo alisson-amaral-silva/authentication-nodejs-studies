@@ -76,8 +76,15 @@ module.exports = {
   async delete(user) {
     try {
       return await dbRun(`DELETE FROM users WHERE id = ?`, [user.id]);
-    } catch (erro) {
+    } catch (error) {
       throw new InternalServerError(`Couldn't delete this user!`);
+    }
+  },
+  async updatePassword(password, id) {
+    try {
+      return await dbRun(`UPDATE users SET hashPassword = ? WHERE id = ?`, [password, id]);
+    } catch (error) {
+      throw new InternalServerError(`Couldn't update this user!`);
     }
   },
 };

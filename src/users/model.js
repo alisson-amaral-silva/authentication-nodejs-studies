@@ -84,6 +84,10 @@ class User {
     this.hashPassword = await User.generateHashPassword(password);
   }
 
+  async updatePassword() {
+    return await daoUsers.updatePassword(this.hashPassword,this.id);
+  }
+
   static generateHashPassword(password) {
     const hashCost = 12;
     return bcrypt.hash(password, hashCost);

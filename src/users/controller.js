@@ -1,7 +1,7 @@
 const User = require("./model");
-const { InvalidArgumentError, InternalServerError } = require("../errors");
+const { InvalidArgumentError, NotFoundError } = require("../errors");
 const tokens = require("./tokens");
-const { EmailCheck } = require("./emails");
+const { EmailCheck, ResetEmail } = require("./emails");
 
 function generateAddress(route, token) {
   const baseUrl = process.env.BASE_URL;
@@ -83,4 +83,39 @@ module.exports = {
       next(error);
     }
   },
+
+  async forgotPassword(req, res, next) {
+    const defaultMessage = 'if we found an user with this email we will send a message with instructions to reset the password';
+
+    try {
+      const email = req.body.email;
+      const user = await User.findByEmail(email);
+
+      const token = await tokens.resetPassword.create(user.id);
+      const emailCheck = new ResetEmail(user, token);
+      await emailCheck.sendEmail().catch(console.log);
+      res.send({message: defaultMessage});
+    } catch (error) {
+      if(error instanceof NotFoundError){
+        res.send({message: defaultMessage});
+      }
+      next(error);
+    }
+  },
+
+  async changePassword(req, res, next) {
+    try {
+      if(typeof req.body.token !== 'string' && !req.body.token){
+        throw new InvalidArgumentError();
+      }
+      const id = await tokens.resetPassword.check(req.body.token);
+      const user = await User.findById(id);
+      await user.addPassword(req.body.password);
+      await user.updatePassword();
+      res.send({message: "Password updated successfully"});
+    } catch (error) {
+      next(error);
+    }
+
+  }
 };
