@@ -1,5 +1,5 @@
 const daoUsers = require("./dao");
-const { InvalidArgumentError } = require("../errors");
+const { InvalidArgumentError, NotFoundError } = require("../errors");
 const validations = require("../default-validations");
 const bcrypt = require("bcrypt");
 
@@ -45,7 +45,7 @@ class User {
   static async findById(id) {
     const user = await daoUsers.findById(id);
     if (!user) {
-      return null;
+      throw new NotFoundError("user");
     }
 
     return new User(user);
@@ -54,7 +54,7 @@ class User {
   static async findByEmail(email) {
     const user = await daoUsers.findByEmail(email);
     if (!user) {
-      return null;
+      throw new NotFoundError("user");
     }
 
     return new User(user);
