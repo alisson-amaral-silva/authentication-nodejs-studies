@@ -27,4 +27,24 @@ module.exports = {
       return res.status(500).json({ error: error });
     }
   },
+
+  async getPostDetails(req, res) {
+    try {
+      const post = await Post.findById(req.params.id, req.user.id);
+      res.json(post);
+    } catch (error) {
+      return res.status(500).json({ error: error.message });
+    }
+  },
+
+  async delete(req, res) {
+    try {
+      const post = await Post.findById(req.params.id, req.user.id);
+      post.remover();
+      res.status(204);
+      res.end();
+    } catch (error) {
+      return res.status(500).json({ error: error.message });
+    }
+  },
 };

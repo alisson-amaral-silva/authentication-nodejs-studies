@@ -5,7 +5,9 @@ const POSTS_SCHEMA = `
   CREATE TABLE IF NOT EXISTS posts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title VARCHAR(50) NOT NULL,
-    content VARCHAR(140)
+    content VARCHAR(140),
+    author INTEGER NOT NULL,
+    FOREIGN KEY (author) REFERENCES users(id)
   )
   `;
 
