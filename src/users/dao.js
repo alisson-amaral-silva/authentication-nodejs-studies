@@ -31,7 +31,7 @@ module.exports = {
         [id]
       );
     } catch (error) {
-      throw new InternalServerError(`Couldn't find this user!`);
+      throw new InternalServerError(`Fail to find this user!`);
     }
   },
 
@@ -46,7 +46,7 @@ module.exports = {
         [email]
       );
     } catch (error) {
-      throw new InternalServerError(`Couldn't find this user!`);
+      throw new InternalServerError(`Fail to find this user!`);
     }
   },
 
@@ -69,7 +69,7 @@ module.exports = {
         `
       );
     } catch (error) {
-      throw new InternalServerError(`Couldn't list users!`);
+      throw new InternalServerError(`Fail to list users!`);
     }
   },
 
@@ -77,14 +77,14 @@ module.exports = {
     try {
       return await dbRun(`DELETE FROM users WHERE id = ?`, [user.id]);
     } catch (error) {
-      throw new InternalServerError(`Couldn't delete this user!`);
+      throw new InternalServerError(`Fail to delete this user!`);
     }
   },
   async updatePassword(password, id) {
     try {
       return await dbRun(`UPDATE users SET hashPassword = ? WHERE id = ?`, [password, id]);
     } catch (error) {
-      throw new InternalServerError(`Couldn't update this user!`);
+      throw new InternalServerError(`Fail to update this user!`);
     }
   },
 };

@@ -52,7 +52,7 @@ module.exports = {
         authorId,
       ]);
     } catch (erro) {
-      throw new InternalServerError(`Couldn't find this post!`);
+      throw new InternalServerError(`Fail to find this post!`);
     }
   },
 
